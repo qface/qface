@@ -1,0 +1,13 @@
+.tsunami .dijitToolbar .dijitToolbarSeparator {
+	background: url('../../../images/icons/images/editorIconsEnabled.png'); 
+}
+.tsunami .dijitEditorIcon {
+	background-image: url('../../../images/icons/images/editorIconsEnabled.png'); 
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+}
+.tsunami .dijitDisabled .dijitEditorIcon {
+	background-image: url('../../../images/icons/images/editorIconsDisabled.png'); 
+}

@@ -1,0 +1,88 @@
+
+.pc .soria .dijitInputContainer input {
+	margin: 0 0.1em;
+}
+.pc .soria .dijitSelect .dijitButtonContents,
+.pc .soria .dijitSelect,
+.pc .soria .dijitTextBox,
+.pc .soria .dijitTextArea {
+	
+	background:#fff url("../images/validationInputBg.png") repeat-x top left;
+	#background:#fff url('../images/validationInputBg.gif') repeat-x top left;
+}
+.pc .soria .dijitSelect,
+.pc .soria .dijitTextBox,
+.pc .soria .dijitTextArea {
+	border:1px solid #8ba0bd;
+}
+.pc .soria .dijitSelect .dijitArrowButton,
+.pc .soria .dijitComboBox .dijitButtonNode {
+	padding: 0 0.2em;
+}
+.pc .soria .dijitSelect .dijitButtonContents,
+.pc .soria .dijitTextBox .dijitButtonNode {
+	
+	border-color: #8ba0bd;
+}
+.pc .soria .dijitSelectFocused,
+.pc .soria .dijitTextBoxFocused,
+.pc .soria .dijitTextAreaFocused {
+	
+	border-color:#406b9b;
+}
+.pc .soria .dijitSelectFocused TD,
+.pc .soria .dijitTextBoxFocused .dijitButtonNode,
+.pc .soria .dijitSpinner .dijitUpArrowButtonActive,
+.pc .soria .dijitSpinner .dijitDownArrowButtonActive {
+	border-color:#8ba0bd;
+}
+.pc .soria .dijitSpinnerFocused .dijitDownArrowButton,
+.pc .soria .dijitSpinner .dijitUpArrowButtonActive,
+.pc .soria .dijitSpinner .dijitDownArrowButtonActive {
+	border-top-color:#8ba0bd;
+}
+.pc .soria .dijitError {
+	border-color:#f3d118;
+	background-color:#f9f7ba;
+	background-image:none;
+}
+.pc .soria .dijitErrorFocused {
+	background-color:#ff6;
+	background-image:none;
+}
+.pc .soria .dijitValidationTextBoxError .dijitValidationIcon {
+	
+	width: 16px;
+	background: transparent url('../images/warning.png') no-repeat center center;
+}
+.pc .soria .dijitComboBoxHighlightMatch {
+	background-color:#f9f7ba;
+}
+
+/* dojox.mobile.TextBox */
+.mobile .soria .dijitTextBox {
+  height: 22px;
+  border-width: 1px;
+  border-style: inset;
+  font-family: Helvetica;
+  font-size: 13px;
+  border-color: #9cacc0;
+  border-radius: 5px;
+}
+
+/* dojox.mobile.TextArea */
+.mobile .soria .dijitTextArea {
+  padding: 4px 1px;
+  border-width: 1px;
+  border-style: inset;
+  font-family: Helvetica;
+  font-size: 13px;
+  border-color: #9cacc0;
+  border-radius: 5px;
+}
+/* dojox.mobile.ExpandingTextArea */
+.mblExpandingTextArea {
+  margin: 2px;
+}
+
+

@@ -1,0 +1,15 @@
+.dj_ie .tsunami .dojoxGridRtl .dojoxGridHeader table {
+	float:none;
+}
+.tsunami .dojoxGridRtl .dojoxGridCell {
+	text-align:right;
+}
+.dj_ie8 .tsunami .dojoxGridRtl .dojoxGridCell {
+	border-left: none;
+}
+.dj_ie .tsunami .dojoxGridRtl .dojoxGridMasterView .dojoxGridRowTable {
+	border-left: #e5dac8 1px solid
+}
+.tsunami .dojoxGridRtl .dojoxGridArrowButtonNode {
+	float:left;
+}

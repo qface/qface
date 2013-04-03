@@ -1,0 +1,60 @@
+
+.tsunami .dijitInputContainer input {
+	margin: 0 0.1em;
+}
+.tsunami .dijitSelect .dijitButtonContents,
+.tsunami .dijitSelect,
+.tsunami .dijitTextBox,
+.tsunami .dijitTextArea {
+	
+	background:#fff url("../images/validationInputBg.png") repeat-x top left;
+	#background:#fff url('../images/validationInputBg.gif') repeat-x top left;
+}
+.tsunami .dijitSelect,
+.tsunami .dijitTextBox,
+.tsunami .dijitTextArea {
+	border:1px solid #8ba0bd;
+}
+.tsunami .dijitSelect .dijitArrowButton,
+.tsunami .dijitComboBox .dijitButtonNode {
+	padding: 0 0.2em;
+}
+.tsunami .dijitSelect .dijitButtonContents,
+.tsunami .dijitTextBox .dijitButtonNode {
+	
+	border-color: #8ba0bd;
+}
+.tsunami .dijitSelectFocused,
+.tsunami .dijitTextBoxFocused,
+.tsunami .dijitTextAreaFocused {
+	
+	border-color:#406b9b;
+}
+.tsunami .dijitSelectFocused TD,
+.tsunami .dijitTextBoxFocused .dijitButtonNode,
+.tsunami .dijitSpinner .dijitUpArrowButtonActive,
+.tsunami .dijitSpinner .dijitDownArrowButtonActive {
+	border-color:#8ba0bd;
+}
+.tsunami .dijitSpinnerFocused .dijitDownArrowButton,
+.tsunami .dijitSpinner .dijitUpArrowButtonActive,
+.tsunami .dijitSpinner .dijitDownArrowButtonActive {
+	border-top-color:#8ba0bd;
+}
+.tsunami .dijitError {
+	border-color:#f3d118;
+	background-color:#f9f7ba;
+	background-image:none;
+}
+.tsunami .dijitErrorFocused {
+	background-color:#ff6;
+	background-image:none;
+}
+.tsunami .dijitValidationTextBoxError .dijitValidationIcon {
+	
+	width: 16px;
+	background: transparent url('../images/warning.png') no-repeat center center;
+}
+.tsunami .dijitComboBoxHighlightMatch {
+	background-color:#f9f7ba;
+}

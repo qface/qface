@@ -1,0 +1,87 @@
+.tundra .win {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.tundra .win-buttons {
+	padding: 3px;
+	width: 85px;
+}
+
+.tundra .win-close,
+.tundra .win-min,
+.tundra .win-max,
+.tundra .win-full {
+	width: 16px;
+	height: 16px;
+}
+
+.tundra .win-close {
+	background-image: url(./images/close.gif);
+}
+
+.tundra .win-min {
+	background-image: url(./images/minimize.gif);
+}
+
+.tundra .win-max {
+	background-image: url(./images/maximize.gif);
+}
+
+.tundra .win-full {
+	background-image: url(./images/full.png);
+}
+
+.tundra .win-tc {
+	padding-top: 2px;
+	z-index: 1;
+    height: 22px;
+	background-image: url(./images/winmid.gif);
+	color: white;
+	font-weight: bold;
+}
+
+.tundra .win-mc {
+	background-color: white;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.tundra .win > .win-bmw {
+	top: 22px;
+}
+
+.tundra .win-tr,
+.tundra .win-tl {
+	height: 22px;
+}
+
+.tundra .win-tr {
+	background-image: url(./images/winright.gif);
+	padding-right: 6px;
+}
+
+.tundra .win-tl {
+	background-image: url(./images/winleft.gif);
+	padding-left: 6px;
+}
+
+.tundra .win-resize {
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	cursor: se-resize;
+}
+
+.tundra .win-mc {
+	background-color: white;
+}
+
+.tundra .win-title {
+    padding-top: 2px;
+    padding-left: 5px;
+}

@@ -1,0 +1,78 @@
+
+.tsunami .dijitTreeNode {
+    background : url('images/treeI.gif') no-repeat;
+    background-position : top left;
+    background-repeat : repeat-y;
+    zoom: 1;
+}
+.tsunami .dijitTreeRowHover {
+	
+	background-image: url(images/treeHover.png);
+	background-repeat: repeat;
+	background-color: transparent !important;
+}
+.tsunami .dijitTreeIsLast {
+    background: url('images/treeI_half.gif') no-repeat;
+}
+.tsunami .dijitTreeLabel {
+	font-weight: normal;
+	margin-left: 3px;
+}
+.tsunami .dijitTreeIsRoot {
+    margin-left: 0;
+    background-image: none;
+}
+.tsunami .dijitTreeExpando {
+    width: 18px;
+    height: 18px;
+}
+.tsunami .dijitTreeRow {
+	
+	padding-bottom: 2px;
+}
+.tsunami .dijitTreeContent {
+    min-height: 18px;
+    min-width: 18px;
+    padding-left:1px;
+}
+.tsunami .dijitTreeRowSelected .dijitTreeLabel{
+	background:#b8cbec;
+}
+.tsunami .dijitTreeExpandoOpened {
+	background: url('images/spriteTree.gif') no-repeat -18px top;
+}
+.tsunami .dijitTreeExpandoClosed {
+	background-image: url('images/spriteTree.gif');
+}
+.tsunami .dijitTreeExpandoLeaf {
+	background: url('images/spriteTree.gif') no-repeat -36px top;
+}
+.tsunami .dijitTreeExpandoLoading {
+	background-image: url('images/treeExpand_loading.gif');
+}
+.tsunami .dijitTreeIcon {
+	width: 16px;
+	height: 16px;
+}
+.tsunami .dijitFolderOpened {
+	background: url('images/spriteDivIcons.gif') no-repeat -16px top;
+}
+.tsunami .dijitFolderClosed {
+	background: url('images/spriteDivIcons.gif') no-repeat top left;
+}
+.tsunami .dijitLeaf {
+	background: url('images/spriteDivIcons.gif') no-repeat -32px top;
+}
+.tsunami .dijitTreeNode .dojoDndItemBefore,
+.tsunami .dijitTreeNode .dojoDndItemAfter {
+	border-bottom: none;
+	border-top: none;
+}
+.tsunami .dijitTreeNode .dojoDndItemBefore .dijitTreeContent {
+	
+	border-top: 2px solid #369;
+}
+.tsunami .dijitTreeNode .dojoDndItemAfter .dijitTreeContent {
+	
+	border-bottom: 2px solid #369;
+}

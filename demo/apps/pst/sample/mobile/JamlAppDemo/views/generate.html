@@ -1,0 +1,39 @@
+    <div name="generate" class="view mblView"> 
+    <h1 dojoType="dojox.mobile.Heading"> <span dojoType="dojox.mobile.ToolBarButton" label="Home" transitionOptions="{title:'Home',target:'home'}"></span>Simple Form Generate Example</h1> 
+    <div class="field-title"></div> 
+        <div name="main"> 
+          <div name="leftNav"> 
+          </div> 
+          <div name="mainContent" class="generate-maincontent" dojoType="dojox.mobile.Container"> 
+            <div name="outerModelArea" dojoType="dojox.mobile.Container"> 
+                <h3 dojoType="dojox.mobile.RoundRectCategory">Model</h3> 
+                <div class="generate-textarea-row"> 
+                    <textarea class="generate-textarea-cell" dojoType="dojox.mobile.TextArea" name="modelArea" style="width: 300px; height: 300px;"> 
+[{
+	"Serial" : "360324",
+	"First"  : "John",
+	"Last"   : "Doe",
+	"Email"  : "jdoe@us.ibm.com",
+	"ShipTo" : {
+		"Street" : "123 Valley Rd",
+		"City"   : "Katonah",
+		"State"  : "NY",
+		"Zip"    : "10536"
+	},
+	"BillTo" : {
+		"Street" : "17 Skyline Dr",
+		"City"   : "Hawthorne",
+		"State"  : "NY",
+		"Zip"    : "10532"
+	}
+}]
+                   </textarea> 
+                </div> 
+                <div class="fieldset"> 
+                    <div class="spacer"></div> 
+                    <button name="updateBtn" dojoType="dojox.mobile.Button" class="mblBlueButton" data-dojo-props="">Update Model</button> 
+                </div> 
+            </div> 
+          </div> 
+        </div>
+   </div> 

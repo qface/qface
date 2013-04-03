@@ -1,0 +1,40 @@
+
+.tsunami .dijitToggleButton .dijitRadio,
+.tsunami .dijitToggleButton .dijitRadioIcon {
+	background-image: url('../images/spriteRadio.gif');
+}
+.tsunami .dijitRadio,
+.tsunami .dijitRadioIcon	{		
+	background-image: url('../images/spriteRadio.gif'); 
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+}
+.tsunami .dijitRadio,
+.tsunami .dijitToggleButton .dijitRadioIcon {
+	
+	background-position: -16px;
+}
+.tsunami .dijitRadioChecked,
+.tsunami .dijitToggleButtonChecked .dijitRadioIcon {
+	
+	background-position: 0;
+}
+.tsunami .dijitRadioDisabled {
+	
+	background-position: -48px;
+}
+.tsunami .dijitRadioCheckedDisabled {
+	
+	background-position: -32px;
+}
+.tsunami .dijitRadioHover {
+	
+	background-position: -80px;
+}
+.tsunami .dijitRadioCheckedHover {
+	
+	background-position: -64px;
+}

@@ -1,0 +1,135 @@
+
+.tsunami .dijitCalendarIncrementControl {
+	
+	width:15px;
+	height:15px;
+	background-image: url("images/spriteRoundedIconsSmall.png");
+	background-repeat: no-repeat;
+}
+.dj_ie6 .tsunami .dijitCalendarIncrementControl {
+	font-size:.1em;
+	background-image: url("images/spriteRoundedIconsSmall.gif");
+}
+.tsunami .dijitA11ySideArrow {
+	display: none;
+}
+.tsunami .dijitCalendarDecrease {
+	background-position: top left;
+}
+.tsunami .dijitCalendarIncrease {
+	background-position: -30px top;
+}
+.tsunami table.dijitCalendarContainer {
+	font-size: 100%;
+	border-spacing: 0;
+	border-collapse: separate;
+	border: 1px solid #b1badf;
+	margin: 0;
+}
+.tsunami .dijitCalendarMonthContainer th {
+	
+	background:#bed7f0 url("images/titleBar.png") repeat-x top;
+	padding-top:.3em;
+	padding-bottom:.2em;
+	text-align:center;
+}
+.dj_ie6 .tsunami .dijitCalendarMonthContainer th {
+	padding-top:.2em;
+	padding-bottom:.1em;
+}
+.tsunami .dijitCalendarDayLabelTemplate {
+	
+	background:#bed7f0;
+	font-weight:normal;
+	padding-top:.15em;
+	padding-bottom:.2em;
+	border-bottom: 1px solid #b1badf;
+	color:#293a4b;
+	text-align:center;
+}
+.tsunami .dijitCalendarBodyContainer {
+	border-bottom: 1px solid #eeeeee;
+}
+.tsunami .dijitCalendarMonthLabel {
+	color:#293a4b;
+	font-weight: bold;
+	padding: 0 4px;
+}
+.tsunami .dijitCalendarDateTemplate {
+	
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align: center;
+	padding: 0.3em 0.3em 0.05em 0.3em;
+	letter-spacing: 1px;
+	background-color: #fff;
+	border:#fff solid 1px !important;
+}
+.dj_ie .tsunami .dijitCalendarDateTemplate {
+	padding: 0.1em .33em 0.02em .33em;
+}
+.tsunami .dijitCalendarPreviousMonth,
+.tsunami .dijitCalendarNextMonth 		{
+	
+	color:#999999;
+	background-color:#fdfdfd !important;
+	border:#fdfdfd solid 1px !important;
+}
+.tsunami .dijitCalendarCurrentMonth {
+	
+}
+.tsunami .dijitCalendarDisabledDate {
+	text-decoration:line-through !important;
+}
+.tsunami .dijitCalendarCurrentDate {
+	
+	text-decoration:underline;
+	font-weight:bold;
+}
+.tsunami .dijitCalendarSelectedDate {
+	
+	background-color:#b9cbf1 !important;
+	color:black !important;
+	border:#4b5aaa solid 1px !important;
+}
+.tsunami .dijitCalendarYearContainer {
+	
+	background:white url("images/titleBar.png") repeat-x top;
+}
+.tsunami .dijitCalendarYearLabel {
+	
+	margin:0;
+	padding:0.4em 0 0.25em 0;
+	text-align:center;
+	font-size: 1.17em;
+}
+.tsunami .dijitCalendarSelectedYear {
+	
+	font-weight:bolder;
+	color:black;
+	padding:0.2em;
+	padding-bottom:0.1em;
+	background-color:#b9cbf1 !important;
+	border:#4b5aaa solid 1px !important;
+}
+.tsunami .dijitCalendarNextYear,
+.tsunami .dijitCalendarPreviousYear {
+	
+	color:black !important;
+	font-weight:normal;
+}
+.tsunami .dijitCalendar .dijitDropDownButton {
+	margin: 0;
+}
+.tsunami .dijitCalendar .dijitButtonText {
+	padding: 0;
+}
+.tsunami .dijitCalendar .dijitDropDownButton .dijitButtonNode {
+	background-color: transparent;
+	background-image: none;
+	padding: 0;
+}
+.tsunami .dijitCalendarMonthMenu .dijitCalendarMonthLabelHover {
+	background-color: #d9e6f9;
+	color: #243C5F;
+}

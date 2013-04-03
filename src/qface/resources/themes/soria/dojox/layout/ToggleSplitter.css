@@ -1,0 +1,73 @@
+.soria .dijitBorderContainer .dijitSplitterH {
+	height: 6px;
+}
+.soria .dijitBorderContainer .dijitSplitterV {
+	width: 6px;
+}
+.soria .dijitBorderContainer .dijitSplitterH .dojoxToggleSplitterIcon {
+	background-image: url('icons/splitterToggleH.png');
+	background-repeat: no-repeat;
+	width: 71px;
+	height: 6px;
+	top: 0;
+	left: 45%;
+	cursor: pointer;
+}
+.soria .dijitBorderContainer .dijitSplitterV .dojoxToggleSplitterIcon {
+	background-image: url('icons/splitterToggleV.png');
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	width: 6px;
+	height: 71px;
+	left: 0;
+	top: 45%;
+	cursor: pointer;
+}
+.soria .dojoxToggleSplitterTop .dojoxToggleSplitterIconOpen, 
+.soria .dojoxToggleSplitterBottom .dojoxToggleSplitterIconClosed {
+	background-position: 0 -12px !important;
+}
+.soria .dojoxToggleSplitterBottom .dojoxToggleSplitterIconOpen, 
+.soria .dojoxToggleSplitterTop .dojoxToggleSplitterIconClosed {
+	background-position: 0 0 !important;
+}
+.soria .dojoxToggleSplitterLeft .dojoxToggleSplitterIconOpen, 
+.soria .dojoxToggleSplitterRight .dojoxToggleSplitterIconClosed {
+	background-position: -12px 0 !important;
+}
+.soria .dojoxToggleSplitterRight .dojoxToggleSplitterIconOpen, 
+.soria .dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed {
+	background-position: 0 0 !important;
+}
+.soria .dojoxToggleSplitterTop .dojoxToggleSplitterIconOpenHover, 
+.soria .dojoxToggleSplitterBottom .dojoxToggleSplitterIconClosedHover {
+	background-position: 0 -18px !important;
+}
+.soria .dojoxToggleSplitterBottom .dojoxToggleSplitterIconOpenHover, 
+.soria .dojoxToggleSplitterTop .dojoxToggleSplitterIconClosedHover {
+	background-position: 0 -6px !important;
+}
+.soria .dojoxToggleSplitterLeft .dojoxToggleSplitterIconOpenHover, 
+.soria .dojoxToggleSplitterRight .dojoxToggleSplitterIconClosedHover {
+	background-position: -18px 0 !important;
+}
+.soria .dojoxToggleSplitterRight .dojoxToggleSplitterIconOpenHover, 
+.soria .dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosedHover {
+	background-position: -6px 0 !important;
+}
+.soria .dojoxToggleSplitterTop .dojoxToggleSplitterA11y,
+.soria .dojoxToggleSplitterBottom .dojoxToggleSplitterA11y {
+	display: none;
+	font-size: 6px;
+	text-align: center;
+}
+.soria .dojoxToggleSplitterRight .dojoxToggleSplitterA11y,
+.soria .dojoxToggleSplitterLeft .dojoxToggleSplitterA11y {
+	display: none;
+	font-size: 8px;
+	position: relative;
+	top: 48%;
+}
+.dijit_a11y .soria .dojoxToggleSplitterA11y {
+	display: block;
+}

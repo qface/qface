@@ -1,0 +1,59 @@
+
+.tsunami .dijitBorderContainer {
+	background-color: #e1ebfb;
+	padding: 5px;
+}
+.tsunami .dijitSplitContainer-child,
+.tsunami .dijitBorderContainer-child {
+	
+	border: 1px #b1badf solid;
+}
+.tsunami .dijitBorderContainer-dijitTabContainerTop,
+.tsunami .dijitBorderContainer-dijitTabContainerBottom,
+.tsunami .dijitBorderContainer-dijitTabContainerLeft,
+.tsunami .dijitBorderContainer-dijitTabContainerRight {
+	
+	 border: none;
+}
+.tsunami .dijitBorderContainer-dijitBorderContainer {
+	
+	border: none;
+	padding: 0;
+}
+.tsunami .dijitSplitterH,
+.tsunami .dijitGutterH {
+	background: #E1EBFB;
+	border:0;
+	border-left:0 solid #d3d3d3;
+	border-right:0 solid #d3d3d3;
+	height:5px;
+}
+.tsunami .dijitSplitterH .dijitSplitterThumb {
+	background:#B0B0B0 none;
+	height:1px;
+	top:2px;
+	width:19px;
+}
+.tsunami .dijitSplitterV,
+.tsunami .dijitGutterV {
+	background: #E1EBFB;
+	border:0;
+	border-top:0 solid #d3d3d3;
+	border-bottom:0 solid #d3d3d3;
+	width:5px;
+}
+.tsunami .dijitSplitterV .dijitSplitterThumb {
+	background:#B0B0B0 none;
+	height:19px;
+	left:2px;
+	width:1px;
+}
+.tsunami .dijitSplitterActive {
+	font-size: 1px;
+	background-image: none;
+	background-color: #aaa;
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	filter: Alpha(Opacity=60);
+	margin: 0;
+}

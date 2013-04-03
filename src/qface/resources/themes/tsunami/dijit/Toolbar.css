@@ -1,0 +1,56 @@
+.tsunami .dijitToolbar {
+	border-bottom: 1px solid #ccc;
+	background:#eaeaea url("images/titleBar.png") repeat-x top left;
+}
+.dj_ie6 .tsunami .dijitToolbar {
+	height: 10px;
+}
+.tsunami .dijitToolbar .dijitButtonNode,
+.tsunami .dijitToolbar .dijitComboButton .dijitButtonContents,
+.tsunami .dijitToolbar .dijitComboButton .dijitDownArrowButton {
+	background: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 12px;
+}
+.tsunami .dijitToolbar .dijitButton,
+.tsunami .dijitToolbar .dijitToggleButton,
+.tsunami .dijitToolbar .dijitDropDownButton,
+.tsunami .dijitToolbar .dijitComboButton .dijitButtonContents,
+.tsunami .dijitToolbar .dijitComboButton .dijitDownArrowButton {
+	background: none;
+	padding: 1px;	
+}
+.tsunami .dijitToolbar .dijitButtonChecked,
+.tsunami .dijitToolbar .dijitToggleButtonChecked {
+	background-color:#d8e5f8;
+	border:1px solid #316ac5;
+	padding: 0;
+}
+.tsunami .dijitToolbar .dijitButtonCheckedHover,
+.tsunami .dijitToolbar .dijitToggleButtonCheckedHover
+ {
+	background-color:#9abbea;
+	border:1px solid #316ac5;
+	padding: 0;
+}
+.tsunami .dijitToolbar .dijitButtonHover,
+.tsunami .dijitToolbar .dijitToggleButtonHover,
+.tsunami .dijitToolbar .dijitDropDownButtonHover,
+.tsunami .dijitToolbar .dijitComboButton .dijitButtonContentsHover,
+.tsunami .dijitToolbar .dijitComboButton .dijitDownArrowButtonHover {
+	
+	border: 1px solid #316ac5;
+	padding: 0;
+	background-color:#9abbea;
+}
+.tsunami .dijitToolbar label {
+	padding: 3px 3px 0 6px;
+}
+.dj_ie .tsunami .dijitToolbar .dijitComboButton .dijitButtonContentsFocused,
+.dj_ie .tsunami .dijitToolbar .dijitComboButton .dijitDownArrowButtonFocused {
+	
+	border: 1px #777 dotted !important;
+	padding: 0;
+}

@@ -1,0 +1,11 @@
+define(
+({
+"close":"閉じる",
+"maximize":"最大化",
+"minimize":"最小化",
+"full":"最大化(フル)",
+"unmaximize":"Unmaximize",
+"restore":"元に戻す",
+"alwaysOnTop":"常に手前に表示"
+})
+);

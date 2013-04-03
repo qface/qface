@@ -1,0 +1,40 @@
+.tundra .dojoxResizeHandle {
+	float: right;
+	position: absolute;
+	right: 2px;
+	bottom: 2px;
+	width: 13px;
+	height: 13px;
+	z-index: 20;
+	background-image: url('icons/resize.png');
+	line-height: 0px;
+}
+.dijitRtl .tundra .dojoxResizeHandle {
+        float: right;
+        left: 0px;
+        right: auto;
+	background-image: url('icons/resizeRtl.png');
+}
+.tundra .dojoxResizeNW {
+	cursor: nw-resize;
+}
+.dijitRtl .tundra .dojoxResizeNW {
+        cursor: ne-resize;
+}
+.tundra .dojoxResizeNE {
+	cursor: ne-resize; 
+}
+.dijitRtl .tundra .dojoxResizeNE {
+        cursor: nw-resize;
+}
+.tundra .dojoxResizeW {
+	cursor: w-resize; 
+}
+.tundra .dojoxResizeN { 
+	cursor: n-resize; 
+}
+.tundra .dojoxResizeHandleClone {
+	position:absolute; top:0; left:0; 
+	border:1px dashed #666; 
+	z-index:999; 
+}

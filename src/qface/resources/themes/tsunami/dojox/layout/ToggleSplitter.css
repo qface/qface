@@ -1,0 +1,73 @@
+.tsunami .dijitBorderContainer .dijitSplitterH {
+	height: 6px;
+}
+.tsunami .dijitBorderContainer .dijitSplitterV {
+	width: 6px;
+}
+.tsunami .dijitBorderContainer .dijitSplitterH .dojoxToggleSplitterIcon {
+	background-image: url('icons/splitterToggleH.png');
+	background-repeat: no-repeat;
+	width: 71px;
+	height: 6px;
+	top: 0;
+	left: 45%;
+	cursor: pointer;
+}
+.tsunami .dijitBorderContainer .dijitSplitterV .dojoxToggleSplitterIcon {
+	background-image: url('icons/splitterToggleV.png');
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	width: 6px;
+	height: 71px;
+	left: 0;
+	top: 45%;
+	cursor: pointer;
+}
+.tsunami .dojoxToggleSplitterTop .dojoxToggleSplitterIconOpen, 
+.tsunami .dojoxToggleSplitterBottom .dojoxToggleSplitterIconClosed {
+	background-position: 0 -12px !important;
+}
+.tsunami .dojoxToggleSplitterBottom .dojoxToggleSplitterIconOpen, 
+.tsunami .dojoxToggleSplitterTop .dojoxToggleSplitterIconClosed {
+	background-position: 0 0 !important;
+}
+.tsunami .dojoxToggleSplitterLeft .dojoxToggleSplitterIconOpen, 
+.tsunami .dojoxToggleSplitterRight .dojoxToggleSplitterIconClosed {
+	background-position: -12px 0 !important;
+}
+.tsunami .dojoxToggleSplitterRight .dojoxToggleSplitterIconOpen, 
+.tsunami .dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed {
+	background-position: 0 0 !important;
+}
+.tsunami .dojoxToggleSplitterTop .dojoxToggleSplitterIconOpenHover, 
+.tsunami .dojoxToggleSplitterBottom .dojoxToggleSplitterIconClosedHover {
+	background-position: 0 -18px !important;
+}
+.tsunami .dojoxToggleSplitterBottom .dojoxToggleSplitterIconOpenHover, 
+.tsunami .dojoxToggleSplitterTop .dojoxToggleSplitterIconClosedHover {
+	background-position: 0 -6px !important;
+}
+.tsunami .dojoxToggleSplitterLeft .dojoxToggleSplitterIconOpenHover, 
+.tsunami .dojoxToggleSplitterRight .dojoxToggleSplitterIconClosedHover {
+	background-position: -18px 0 !important;
+}
+.tsunami .dojoxToggleSplitterRight .dojoxToggleSplitterIconOpenHover, 
+.tsunami .dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosedHover {
+	background-position: -6px 0 !important;
+}
+.tsunami .dojoxToggleSplitterTop .dojoxToggleSplitterA11y,
+.tsunami .dojoxToggleSplitterBottom .dojoxToggleSplitterA11y {
+	display: none;
+	font-size: 6px;
+	text-align: center;
+}
+.tsunami .dojoxToggleSplitterRight .dojoxToggleSplitterA11y,
+.tsunami .dojoxToggleSplitterLeft .dojoxToggleSplitterA11y {
+	display: none;
+	font-size: 8px;
+	position: relative;
+	top: 48%;
+}
+.dijit_a11y .tsunami .dojoxToggleSplitterA11y {
+	display: block;
+}

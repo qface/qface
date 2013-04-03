@@ -1,0 +1,205 @@
+
+.pc .soria .dijitButtonNode {
+	
+	border: 1px solid #8ba0bd;
+	border-bottom:1px solid #657c9c;
+	padding: 0.1em 0.2em 0.2em 0.2em;
+	background: #bcd5f0 url("../images/buttonEnabled.png") repeat-x top left;
+}
+.pc .soria .dijitButtonText {
+	text-align: center;
+	padding: 0 0.3em;
+}
+.pc .soria .dijitInputField {
+	padding: 0; 
+}
+.pc .soria .dijitArrowButton {
+	color: #111;
+}
+.pc .soria .dijitComboButton .dijitDownArrowButton {
+	padding-right:4px;
+}
+.pc .soria .dijitTextBoxReadOnly,
+.pc .soria .dijitTextBoxReadOnly .dijitButtonNode,
+.pc .soria .dijitButtonDisabled .dijitButtonNode,
+.pc .soria .dijitToggleButtonDisabled .dijitButtonNode,
+.pc .soria .dijitDropDownButtonDisabled .dijitButtonNode,
+.pc .soria .dijitComboButtonDisabled .dijitButtonNode,
+.pc .soria .dijitTextBoxDisabled,
+.pc .soria .dijitTextBoxDisabled .dijitButtonNode {
+	
+	border-color: #b9bbdd #b9bbdd #b9bbdd #b9bbdd;
+	background:#c3d3e5 url("../images/buttonDisabled.png") top repeat-x;
+	opacity: 0.60;
+}
+.dj_ie6 .soria .dijitReadOnly input,
+.dj_ie7 .soria .dijitReadOnly input,
+.dj_ie6 .soria .dijitComboButtonDisabled .dijitButtonText,
+.dj_ie7 .soria .dijitComboButtonDisabled .dijitButtonText {
+	
+	color: #aaa;
+}
+.pc .soria .dijitButtonHover .dijitButtonNode,
+.pc .soria .dijitButtonNodeHover,
+.pc .soria .dijitToggleButtonHover .dijitButtonNode,
+.pc .soria .dijitDropDownButtonHover .dijitButtonNode,
+.pc .soria .dijitButtonContentsHover,
+.pc .soria .dijitUpArrowButtonHover,
+.pc .soria .dijitDownArrowButtonHover {
+	
+	
+	color:#243C5F;
+	background:#acc5e2 url("../images/buttonHover.png") repeat-x top left;
+}
+.pc .soria .dijitButtonActive .dijitButtonNode,
+.pc .soria .dijitToggleButtonActive .dijitButtonNode,
+.pc .soria .dijitDropDownButtonActive .dijitButtonNode,
+.pc .soria .dijitComboButtonActive .dijitButtonContents,
+.pc .soria .dijitStackController .dijitToggleButtonChecked .dijitButtonNode {
+	
+	border-color:#657c9c;
+	background: #91b4e5 url("../images/buttonActive.png") top left repeat-x;
+}
+.pc .soria .dijitUpArrowButtonActive,
+.pc .soria .dijitDownArrowButtonActive {
+	
+	background: #91b4e5 url("../images/buttonActive.png") top left repeat-x;
+}
+.pc .soria .dijitArrowButtonInner {
+	background-image: url("../images/spriteArrows.png");
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	width: 11px;
+	height: 11px;
+}
+.pc .soria .dijitComboBox .dijitArrowButtonInner {
+        background-position: 0 center;
+}
+.pc .soria .dijitLeftArrowButton .dijitArrowButtonInner {
+	background-position: -11px center;
+}
+.pc .soria .dijitUpArrowButton .dijitArrowButtonInner {
+	background-position: -22px center;
+}
+.pc .soria .dijitRightArrowButton .dijitArrowButtonInner {
+	background-position: -33px center;
+}
+.dj_ie6 .soria .dijitArrowButtonInner {
+	background-image: url("../images/spriteArrows.gif");
+}
+.dj_ie .soria .dijitSpinner .dijitUpArrowButton .dijitArrowButtonInner {
+	margin-top: 1px; 
+}
+.pc .soria .dijitSpinnerButtonContainer {
+	width: auto;
+	padding: 0;
+}
+.pc .soria .dijitSpinner .dijitArrowButton {
+	width: 15px;
+}
+.pc .soria .dijitSpinner .dijitSpinnerButtonInner {
+	width: 15px;
+}
+.pc .soria .dijitSpinner .dijitArrowButtonInner .dijitInputField {
+	padding: 0;
+}
+
+/* dojox.mobile.Button */
+.mobile .soria .dijitButton,.mobile .soria .dijitDropDownButton {
+  padding: 0px 10px;
+  height: 29px;
+  border-style: outset;
+  border-width: 1px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#cecece), color-stop(0.5, #f8f8f8), color-stop(0.5, #eeeeee));
+  font-family: Helvetica;
+  line-height: 29px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  border-color: #9cacc0;
+  border-radius: 5px;
+  color: black;
+  font-size: 13px;
+}
+
+.mobile .soria .dijitButtonSelected,.mobile .soria .dijitDropDownButtonSelected {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#bfbfbf), color-stop(0.5, #ebebeb), color-stop(0.5, #dedede));
+  color: black;
+}
+
+.mobile .soria .dijitButtonDisabled, .mobile .soria .dijitButton:disabled,.mobile .soria .dijitDropDownButtonDisabled, .mobile .soria .dijitDropDownButton:disabled  {
+  border-color: grey;
+  background-image: none;
+  color: grey;
+  cursor: default;
+}
+
+.mobile .soria .dijitBlueButton {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7a9de9), to(#2362dd), color-stop(0.5, #366edf), color-stop(0.5, #215fdc));
+  color: white;
+}
+
+.mobile .soria .dijitBlueButtonSelected {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8ea4c1), to(#4a6c9b), color-stop(0.5, #5877a2), color-stop(0.5, #476999));
+}
+
+.mobile .soria .dijitRedButton {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fa9d58), to(#ee4115), color-stop(0.5, #ff4d25), color-stop(0.5, #ed4d15));
+  color: white;
+}
+
+.mobile .soria .dijitRedButtonSelected {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c1a48e), to(#9b6c4a), color-stop(0.5, #a27758), color-stop(0.5, #996947));
+}
+
+/* dojox.mobile.ToggleButton */
+.mobile .soria .dijitToggleButton {
+  position: relative;
+  padding: 0 10px 0 25px;
+  height: 29px;
+  border-width: 1px 1px 1px 1px;
+  border-style: outset;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#cecece), color-stop(0.5, #f8f8f8), color-stop(0.5, #eeeeee));
+  font-family: Helvetica;
+  line-height: 29px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  border-color: #9cacc0;
+  border-radius: 5px;
+  font-size: 13px;
+  color: black;
+}
+
+.mobile .soria .dijitToggleButton:disabled {
+  border-color: grey;
+  background-image: none;
+  color: grey;
+  cursor: default;
+}
+
+.mobile .soria .dijitToggleButtonSelected {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#bfbfbf), color-stop(0.5, #ebebeb), color-stop(0.5, #dedede));
+}
+
+.mobile .soria .dijitToggleButtonChecked {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7a9de9), to(#2362dd), color-stop(0.5, #366edf), color-stop(0.5, #215fdc));
+  color: white;
+}
+
+.mobile .soria .dijitToggleButtonChecked:after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 7px;
+  width: 5px;
+  height: 10px;
+  border-width: 2px;
+  border-style: none solid solid none;
+  -webkit-transform: rotate(45deg) skew(10deg);
+  -webkit-transform-origin: 50% 50%;
+  border-color: white;
+}
+
+.mobile .soria .dijitToggleButtonChecked.dijitToggleButtonSelected {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8ea4c1), to(#4a6c9b), color-stop(0.5, #5877a2), color-stop(0.5, #476999));
+}
+

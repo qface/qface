@@ -1,0 +1,122 @@
+
+.tsunami .dijitSliderProgressBarH {
+	border-color: #b1badf;
+	background: #c0c2c5 url("../images/sliderFull.png") repeat-x top left;
+}
+.tsunami .dijitSliderProgressBarV {
+	border-color: #b1badf;
+	background: #c0c2c5 url("../images/sliderFullVertical.png") repeat-y bottom left;
+}
+.tsunami .dijitSliderFocused .dijitSliderProgressBarH,
+.tsunami .dijitSliderFocused .dijitSliderLeftBumper {
+	background-image:url("../images/sliderFullFocus.png");
+}
+.tsunami .dijitSliderFocused .dijitSliderProgressBarV,
+.tsunami .dijitSliderFocused .dijitSliderBottomBumper {
+	background-image:url("../images/sliderFullVerticalFocus.png");
+}
+.tsunami .dijitSliderRemainingBarV {
+	border-color: #b4b4b4;
+	background: #dcdcdc url("../images/sliderEmptyVertical.png") repeat-y bottom left;
+}
+.tsunami .dijitSliderRemainingBarH {
+	border-color: #b4b4b4;
+	background: #dcdcdc url("../images/sliderEmpty.png") repeat-x top left;
+}
+.tsunami .dijitSliderBar {
+	border-style: solid;
+	outline:1px;
+	
+}
+.tsunami .dijitSliderFocused .dijitSliderBar {
+	border-color:#8ba0bd;
+}
+.tsunami .dijitSliderImageHandleH {
+	border:0;
+	width:15px;
+	height:18px;
+	background:url("../images/preciseSliderThumb.png") no-repeat center top;
+}
+.tsunami .dijitSliderFocused .dijitSliderImageHandleH {
+	background-image:url("../images/preciseSliderThumbFocus.png");
+	#background-image:url("../images/preciseSliderThumbFocus.gif");
+}
+.dj_ie6 .tsunami .dijitSliderImageHandleH {
+	background-image:url("../images/preciseSliderThumb.gif");
+}
+.tsunami .dijitSliderLeftBumper {
+	border-left-width: 1px;
+	border-color: #aab0bb;
+	background: #c0c2c5 url("../images/sliderFull.png") repeat-x top left;
+}
+.tsunami .dijitSliderRightBumper {
+	background: #dcdcdc url("../images/sliderEmpty.png") repeat-x top left;
+	border-color: #b4b4b4;
+	border-right-width: 1px;
+}
+.tsunami .dijitSliderImageHandleV {
+	border:0;
+	width:20px;
+	height:15px;
+	background:url("../images/sliderThumb.png") no-repeat center center;
+	#background:url("../images/sliderThumb.gif") no-repeat center center;
+}
+.tsunami .dijitSliderFocused .dijitSliderImageHandleV {
+	background-image:url("../images/sliderThumbFocus.png");
+	#background-image:url("../images/sliderThumbFocus.gif");
+}
+.tsunami .dijitSliderBottomBumper {
+	border-bottom-width: 1px;
+	border-color: #aab0bb;
+	background: #c0c2c5 url("../images/sliderFullVertical.png") repeat-y bottom left;
+}
+.tsunami .dijitSliderTopBumper {
+	background: #dcdcdc url("../images/sliderEmptyVertical.png") repeat-y top left;
+	border-color: #b4b4b4;
+	border-top-width: 1px;
+}
+.tsunami .dijitSliderIncrementIconH,
+.tsunami .dijitSliderIncrementIconV {
+	background:url('../images/spriteRoundedIconsSmall.png') no-repeat -45px top;
+	#background:url('../images/spriteRoundedIconsSmall.gif') no-repeat -45px top;
+	width:15px; height:15px;
+}
+.tsunami .dijitSliderIncrementIconH {
+	background:url('../images/spriteRoundedIconsSmall.png') no-repeat -30px top;
+	#background:url('../images/spriteRoundedIconsSmall.gif') no-repeat -30px top;
+}
+.tsunami .dijitSliderDecrementIconH,
+.tsunami .dijitSliderDecrementIconV {
+	width:15px;
+	height:15px;
+	background:url('../images/spriteRoundedIconsSmall.png') no-repeat -15px top;
+	#background:url('../images/spriteRoundedIconsSmall.gif') no-repeat -15px top;
+}
+.tsunami .dijitSliderDecrementIconH {
+	background:url('../images/spriteRoundedIconsSmall.png') no-repeat 0 top;
+	#background:url('../images/spriteRoundedIconsSmall.gif') no-repeat 0 top;
+}
+.tsunami .dijitSliderButtonInner {
+	visibility:hidden;
+}
+.tsunami .dijitSliderReadOnly *,
+.tsunami .dijitSliderDisabled * {
+	border-color: #d5d5d5 #bdbdbd #bdbdbd #d5d5d5;
+	color: #bdbdbd;
+}
+.tsunami .dijitSliderReadOnly .dijitSliderDecrementIconH,
+.tsunami .dijitSliderDisabled .dijitSliderDecrementIconH {
+	background-position: 0 -15px;
+}
+.tsunami .dijitSliderReadOnly .dijitSliderIncrementIconH,
+.tsunami .dijitSliderDisabled .dijitSliderIncrementIconH {
+	background-position: -30px -15px;
+}
+.tsunami .dijitSliderReadOnly .dijitSliderDecrementIconV,
+.tsunami .dijitSliderDisabled .dijitSliderDecrementIconV {
+	background-position: -15px -15px;
+}
+.tsunami .dijitSliderReadOnly .dijitSliderIncrementIconV,
+.tsunami .dijitSliderDisabled .dijitSliderIncrementIconV {
+	background-position: -45px -15px;
+}

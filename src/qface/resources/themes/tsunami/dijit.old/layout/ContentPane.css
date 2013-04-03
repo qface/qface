@@ -1,0 +1,17 @@
+
+.tsunami .dijitContentPane {
+    padding: 0;
+}
+.tsunami .dijitTabContainerTop-dijitContentPane,
+.tsunami .dijitTabContainerLeft-dijitContentPane,
+.tsunami .dijitTabContainerBottom-dijitContentPane,
+.tsunami .dijitTabContainerRight-dijitContentPane,
+.tsunami .dijitAccordionContainer-dijitContentPane {
+    background-color: #fff;
+    padding: 5px;
+}
+.tsunami .dijitSplitContainer-dijitContentPane,
+.tsunami .dijitBorderContainer-dijitContentPane {
+    background-color: #fff;		
+    padding: 5px;
+}

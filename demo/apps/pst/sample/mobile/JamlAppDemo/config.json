@@ -1,0 +1,143 @@
+{
+	"name": "pst.sample.mobile.JamlAppDemo",
+	"title": "Model App",
+	"description": "A modelApp",
+	"splash": "splash",
+
+	"dependencies": [
+		"dojox/mobile/_base",
+		"dojox/mobile/TabBar",
+		"dojox/mobile/RoundRect",
+		"dojox/mobile/TabBarButton",
+		"dojox/mobile/Button",
+		"dojox/mobile/RoundRect",
+		"dojox/mobile/Heading",
+		"dojox/mvc/StatefulModel", //TODO remove the explicit dependency for stores.
+		"dojo/store/Memory", //TODO remove the explicit dependency for stores.
+		"dojox/mvc/Group",
+        "dojox/mvc/Repeat",
+        "dojox/mvc"
+	],
+	// Modules for the application.  The are basically used as the second
+	// array of mixins in a dojo.declare().  Modify the top level behavior
+	// of the application, how it processes the config or any other life cycle
+	// by creating and including one or more of these
+	"modules": [
+		//"dojox/app/module/env",
+		//"dojox/app/module/history",
+		//"dojox/app/module/lifecycle"
+		//"dojox/app/module/phonegap",
+		//"dojox/app/module/somePlugin"
+	],
+
+	//stores we are using 
+	"stores": {
+	   "namesStore":{
+	       "type": "dojo.store.Memory",
+		   "params": {
+		      "data": [{
+	            "Serial" : "360324",
+	            "First"  : "John",
+	            "Last"   : "Doe",
+	            "Email"  : "jdoe@us.ibm.com",
+	            "ShipTo" : {
+	                "Street" : "123 Valley Rd",
+	                "City"   : "Katonah",
+	                "State"  : "NY",
+	                "Zip"    : "10536"
+	            },
+	            "BillTo" : {
+	                "Street" : "17 Skyline Dr",
+	                "City"   : "Hawthorne",
+	                "State"  : "NY",
+	                "Zip"    : "10532"
+	            }
+		      }]
+		   }
+	   },
+       "repeatStore":{
+	       "type": "dojo.store.Memory",
+		   "params": {
+		      "data": [ 
+                   {
+                       "First"   : "Chad",
+                       "Last"    : "Chapman",
+                       "Location": "CA",
+                       "Office"  : "1278",
+                       "Email"   : "c.c@test.com",
+                       "Tel"     : "408-764-8237",
+                       "Fax"     : "408-764-8228"
+                   },
+                   {
+                       "First"   : "Irene",
+                       "Last"    : "Ira",
+                       "Location": "NJ",
+                       "Office"  : "F09",
+                       "Email"   : "i.i@test.com",
+                       "Tel"     : "514-764-6532",
+                       "Fax"     : "514-764-7300"
+                   },
+                   {
+                       "First"   : "John",
+                       "Last"    : "Jacklin",
+                       "Location": "CA",
+                       "Office"  : "6701",
+                       "Email"   : "j.j@test.com",
+                       "Tel"     : "408-764-1234",
+                       "Fax"     : "408-764-4321"
+                   }
+              ]
+		   }
+       }
+	},
+
+	//models and instantiation parameters for the models. Including 'type' as a property allows
+	//one to overide the class that will be used for the model.  By default it is dojox/mvc/model
+	"models": {
+	   "names": {
+	       "params":{
+		      "store": {"$ref":"#stores.namesStore"}
+		   }	       
+	   }
+	}, 
+
+	//the name of the scene to load when the app is initialized.
+	"defaultView": "home", 
+
+	"defaultTransition": "fade",
+	//scenes are groups of views and models loaded at once	
+	"views": {
+
+		"home": { 
+			"type": "qface.app.jaml.View",
+			"dependencies":["dojox/mobile/ListItem","dojox/mobile/RoundRectList","dojox/mobile/RoundRectCategory","dojox/mobile/Heading"],
+			"template": "views/main.html"
+		},
+
+		"simple":{
+			"type": "qface.app.jaml.View",
+			"template": "views/simple.html",			
+			"dependencies":["dojox/mobile/TextBox"],
+		},
+
+		"repeat": {
+            "type": "qface.app.jaml.View",
+            "models": {
+                "repeatmodels": {
+                    "params":{
+                        "store": {"$ref":"#stores.repeatStore"}
+                    }           
+                }
+            },
+            "template": "views/repeat.html",
+            "dependencies":["dojox/mobile/TextBox"],
+		},
+
+		"generate": {
+            "type": "qface.app.jaml.View",
+            "template": "views/generate.html",
+            "dependencies":["dojox/mobile/TextBox", "dojox/mobile/TextArea", "dojox/mvc/Generate"],
+            "handler" :"scripts/generate"
+		}
+	}	
+}

@@ -1,0 +1,42 @@
+
+.tsunami .dijitTimePickerTick,
+.tsunami .dijitTimePickerMarker {
+	border-color: #b1badf;
+}
+.tsunami .dijitTimePickerTick {
+	color:white;
+}
+.tsunami .dijitTimePickerMarker {
+	background:#bed7f0 url("images/titleBar.png") repeat-x top;
+	color:#293a4b;
+	font-weight: bold;
+}
+.tsunami .dijitTimePickerItemSelected {
+	color: black;
+	background: #b9cbf1 none;
+}
+.tsunami .dijitTimePickerItemHover {
+	background: #60a1ea none;
+	color:white;
+}
+.tsunami .dijitTimePickerItemHover,
+.tsunami .dijitTimePickerItemSelected {
+	position: relative;
+	z-index: 10;
+}
+.tsunami .dijitTimePickerTick .dijitTimePickerItemInner {
+	font-size:0.4em;
+}
+.tsunami .dijitTimePickerItemHover .dijitTimePickerItemInner,
+.tsunami .dijitTimePickerItemSelected .dijitTimePickerItemInner {
+	font-size:1em;
+}
+.tsunami .dijitTimePickerMarkerHover {
+	border-top: 1px solid #94b9ef;
+}
+.tsunami .dijitTimePickerTickHover,
+.tsunami .dijitTimePickerTickSelected {
+	margin-top:-0.3em;
+	margin-bottom:-0.3em;
+	border-bottom: none;
+}

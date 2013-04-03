@@ -1,0 +1,400 @@
+{
+	"name"	: "qfacedemo",
+	"title"	: "Qface Platform デモシステム",
+	"theme" : "soria",
+	"scenes" : {
+		"icons"	: {
+			"type"  : "qface/scene/impl/icons/Scene",
+			"theme" : "soria",
+			"wallpaper": {
+				"image": "./wallpaper1.png",
+				"color": "#696969",
+				"style": "centered",
+				"storedList": []
+			},
+			"panels": [
+		                {
+		                        "thickness": 24,
+		                        "span": 1,
+		                        "locked": true,
+		                        "orientation": "horizontal",
+		                        "placement": "BC",
+		                        "opacity": 0.95,
+		                        "applets": [
+		                                {"settings": {}, "pos": 0.00, "declaredClass": "qface/scene/impl/icons/Taskbar"}
+		                        ]
+		                }
+			],
+			"apps"  : [
+				{
+					"sysname":"pst.sample.tool.Calculator.App",
+					"name":"電卓",
+					"category":"Accessories",
+					"icon":"icon-32-apps-accessories-calculator",
+					"version":"1.0"
+				},
+				{
+					"sysname":"pst.sample.game.Checkers.App",
+					"name":"チェッカーズ",
+					"category":"Games",
+					"icon":"icon-32-apps-preferences-desktop-sound",
+					"version":"1.0"
+				},
+				{
+					"sysname":"pst.sample.game.MineSweep.App",
+					"name":"マインスイーバー",
+					"category":"Games",
+					"icon":"icon-32-apps-preferences-desktop-screensaver",
+					"version":"1.0"
+				},
+				{
+					"sysname":"pst.sample.system.TaskManager.App",
+					"name":"タスクマネジャー",
+					"category":"System",
+					"icon":"icon-32-apps-utilities-system-monitor",
+					"version":"1.0"
+				},
+				{
+					"sysname":"pst.sample.tool.WebBrowser.App",
+					"name":"ウエブブラウザ",
+					"category":"Internet",
+					"icon":"icon-32-apps-internet-web-browser",
+					"version":"1.0"
+				},
+				{
+					"sysname":"pst.sample.effect.3DVideo.App",
+					"name":"3Dプレーヤー",
+					"category":"Multimedia",
+					"icon":"icon-32-apps-internet-web-browser",
+					"version":"1.0"
+				},
+				{
+					"sysname":"pst.sample.office.WordProcessor.App",
+					"name":"ワードプロセッサー",
+					"category":"Office",
+					"icon":"icon-32-mimetypes-x-office-document",
+					"version":"1.0"
+				},
+				{
+					"sysname":"pst.sample.mobile.JamlAppDemo.App",
+					"name":"JAMLモバイルアプリ",
+					"category":"mobile",
+					"icon":"icon-32-apps-preferences-desktop-theme",
+					"version":"1.0"
+				}
+			]
+		},
+		"explore_multitab" : {
+			"type"  : "qface/scene/impl/explorer/MultiTabScene",
+			"theme" : "soria",
+			"wallpaper": {
+				"image": "./wallpaper2.jpg",
+				"color": "#696969",
+				"style": "centered",
+				"storedList": []
+			},
+			"apps"  : {
+				"identifier": "id",
+				"label": "label",
+				"items":	[					
+					{ "type": "folder", "id":"003","sysname": "Accessories",  "label":"Accessories","name":"Accessories", "icon":"category", "folders":[
+								{
+									"id"       : "004",
+									"sysname":"pst.sample.tool.Calculator.App",
+									"label":"電卓",
+									"name":"電卓",
+									"category":"Accessories",
+									"icon":"icon-32-apps-accessories-calculator",
+									"version":"1.0"
+								}
+					]},
+
+					{ "type": "folder", "id":"005","sysname": "Games", "label":"ゲーム","name":"ゲーム", "icon":"category", "folders":[
+								{
+									"id"       : "006",
+									"sysname":"pst.sample.game.MineSweep.App",
+									"label":"マインスイーバー",
+									"name":"マインスイーバー",
+									"category":"Games",
+									"icon":"icon-32-apps-preferences-desktop-screensaver",
+									"version":"1.0"
+								},
+								{
+									"id"       : "007",
+									"sysname":"pst.sample.game.Checkers.App",
+									"label":"チェッカーズ",
+									"name":"チェッカーズ",
+									"category":"Games",
+									"icon":"icon-32-apps-preferences-desktop-sound",
+									"version":"1.0"
+								}
+					]},
+
+
+					{ "type": "folder", "id":"008","sysname": "Internet",  "label":"インターネット","name":"インターネット", "icon":"category", "folders":[
+								{
+									"id"       : "009",
+									"sysname":"pst.sample.tool.WebBrowser.App",
+									"label":"ウエブブラウザ",
+									"name":"ウエブブラウザ",
+									"category":"Internet",
+									"icon":"icon-32-apps-internet-web-browser",
+									"version":"1.0"
+								}
+					]},
+
+					{ "type": "folder", "id":"011","sysname": "System", "label":"システム","name":"システム", "icon":"category", "folders":[
+								{
+									"id"       : "012",
+									"sysname":"pst.sample.system.TaskManager.App",
+									"label":"タスクマネジャー",
+									"name":"タスクマネジャー",
+									"category":"System",
+									"icon":"icon-32-apps-utilities-system-monitor",
+									"version":"1.0"
+								}
+					]},
+
+					{ "type": "folder", "id":"013","sysname": "Multimedia", "label":"マルチメディア", "name":"マルチメディア", "icon":"category", "folders":[
+								{
+									"id"       : "014",
+									"sysname":"pst.sample.effect.3DVideo.App",
+									"label":"3Dプレーヤー",
+									"name":"3Dプレーヤー",
+									"category":"Multimedia",
+									"icon":"icon-32-apps-internet-web-browser",
+									"version":"1.0"
+								}
+					]},
+
+					{ "type": "folder", "id":"015","sysname": "Office", "label":"オフィス", "name":"オフィス", "icon":"category", "folders":[
+								{
+									"id"       : "016",
+									"sysname":"pst.sample.office.WordProcessor.App",
+									"label":"ワードプロセッサー",
+									"name":"ワードプロセッサー",
+									"category":"Office",
+									"icon":"icon-32-mimetypes-x-office-document",
+									"version":"1.0"
+								}
+					]}
+				]
+			}		
+		},
+		
+		"explore_multiapp" : {
+			"type"  : "qface/scene/impl/explorer/MultiAppScene",
+			"theme" : "soria",
+			"wallpaper": {
+				"image": "./wallpaper2.jpg",
+				"color": "#696969",
+				"style": "centered",
+				"storedList": []
+			},
+			"apps"  : {
+				"identifier": "id",
+				"label": "label",
+				"items":	[					
+					{ "type": "folder", "id":"003","sysname": "Accessories",  "label":"Accessories","name":"Accessories", "icon":"category", "folders":[
+								{
+									"id"       : "004",
+									"sysname":"pst.sample.tool.Calculator.App",
+									"label":"電卓",
+									"name":"電卓",
+									"category":"Accessories",
+									"icon":"icon-32-apps-accessories-calculator",
+									"version":"1.0"
+								}
+					]},
+
+					{ "type": "folder", "id":"005","sysname": "Games", "label":"ゲーム","name":"ゲーム", "icon":"category", "folders":[
+								{
+									"id"       : "006",
+									"sysname":"pst.sample.game.MineSweep.App",
+									"label":"マインスイーバー",
+									"name":"マインスイーバー",
+									"category":"Games",
+									"icon":"icon-32-apps-preferences-desktop-screensaver",
+									"version":"1.0"
+								},
+								{
+									"id"       : "007",
+									"sysname":"pst.sample.game.Checkers.App",
+									"label":"チェッカーズ",
+									"name":"チェッカーズ",
+									"category":"Games",
+									"icon":"icon-32-apps-preferences-desktop-sound",
+									"version":"1.0"
+								}
+					]},
+
+
+					{ "type": "folder", "id":"008","sysname": "Internet",  "label":"インターネット","name":"インターネット", "icon":"category", "folders":[
+								{
+									"id"       : "009",
+									"sysname":"pst.sample.tool.WebBrowser.App",
+									"label":"ウエブブラウザ",
+									"name":"ウエブブラウザ",
+									"category":"Internet",
+									"icon":"icon-32-apps-internet-web-browser",
+									"version":"1.0"
+								}
+					]},
+
+					{ "type": "folder", "id":"011","sysname": "System", "label":"システム", "name":"システム", "icon":"category", "folders":[
+								{
+									"id"       : "012",
+									"sysname":"pst.sample.system.TaskManager.App",
+									"label":"タスクマネジャー",
+									"name":"タスクマネジャー",
+									"category":"System",
+									"icon":"icon-32-apps-utilities-system-monitor",
+									"version":"1.0"
+								}
+					]},
+
+					{ "type": "folder", "id":"013","sysname": "Multimedia", "label":"マルチメディア", "name":"マルチメディア", "icon":"category", "folders":[
+								{
+									"id"       : "014",
+									"sysname":"pst.sample.effect.3DVideo.App",
+									"label":"3Dプレーヤー",
+									"name":"3Dプレーヤー",
+									"category":"Multimedia",
+									"icon":"icon-32-apps-internet-web-browser",
+									"version":"1.0"
+								}
+					]},
+
+					{ "type": "folder", "id":"015","sysname": "Office", "label":"オフィス", "name":"オフィス", "icon":"category", "folders":[
+								{
+									"id"       : "016",
+									"sysname":"pst.sample.office.WordProcessor.App",
+									"label":"ワードプロセッサー",
+									"name":"ワードプロセッサー",
+									"category":"Office",
+									"icon":"icon-32-mimetypes-x-office-document",
+									"version":"1.0"
+								}
+					]}
+				]
+			}		
+		},
+		
+		"explore_singleApp" : {
+			"type"  : "qface/scene/impl/explorer/SingleAppScene",
+			"theme" : "soria",
+			"wallpaper": {
+				"image": "./wallpaper2.jpg",
+				"color": "#696969",
+				"style": "centered",
+				"storedList": []
+			},
+			"apps"  : {
+				"identifier": "id",
+				"label": "label",
+				"items":	[				
+					{ "type": "folder", "id":"003","sysname": "Accessories",  "label":"Accessories","name":"Accessories", "icon":"category", "folders":[
+								{
+									"id"       : "004",
+									"sysname":"pst.sample.tool.Calculator.App",
+									"label":"電卓",
+									"name":"電卓",
+									"category":"Accessories",
+									"icon":"icon-32-apps-accessories-calculator",
+									"version":"1.0"
+								}
+					]},
+
+					{ "type": "folder", "id":"005","sysname": "Games", "label":"ゲーム","name":"ゲーム", "icon":"category", "folders":[
+								{
+									"id"       : "006",
+									"sysname":"pst.sample.game.MineSweep.App",
+									"label":"マインスイーバー",
+									"name":"マインスイーバー",
+									"category":"Games",
+									"icon":"icon-32-apps-preferences-desktop-screensaver",
+									"version":"1.0"
+								},
+								{
+									"id"       : "007",
+									"sysname":"pst.sample.game.Checkers.App",
+									"label":"チェッカーズ",
+									"name":"チェッカーズ",
+									"category":"Games",
+									"icon":"icon-32-apps-preferences-desktop-sound",
+									"version":"1.0"
+								}
+					]},
+
+
+					{ "type": "folder", "id":"008","sysname": "Internet",  "label":"インターネット","name":"インターネット", "icon":"category", "folders":[
+								{
+									"id"       : "009",
+									"sysname":"pst.sample.tool.WebBrowser.App",
+									"label":"ウエブブラウザ",
+									"name":"ウエブブラウザ",
+									"category":"Internet",
+									"icon":"icon-32-apps-internet-web-browser",
+									"version":"1.0"
+								}
+					]},
+
+					{ "type": "folder", "id":"011","sysname": "System", "label":"システム", "name":"システム", "icon":"category", "folders":[
+								{
+									"id"       : "012",
+									"sysname":"pst.sample.system.TaskManager.App",
+									"label":"タスクマネジャー",
+									"name":"タスクマネジャー",
+									"category":"System",
+									"icon":"icon-32-apps-utilities-system-monitor",
+									"version":"1.0"
+								}
+					]},
+
+					{ "type": "folder", "id":"013","sysname": "Multimedia", "label":"マルチメディア", "name":"マルチメディア", "icon":"category", "folders":[
+								{
+									"id"       : "014",
+									"sysname":"pst.sample.effect.3DVideo.App",
+									"label":"3Dプレーヤー",
+									"name":"3Dプレーヤー",
+									"category":"Multimedia",
+									"icon":"icon-32-apps-internet-web-browser",
+									"version":"1.0"
+								}
+					]},
+
+					{ "type": "folder", "id":"015","sysname": "Office", "label":"オフィス", "name":"オフィス", "icon":"category", "folders":[
+								{
+									"id"       : "016",
+									"sysname":"pst.sample.office.WordProcessor.App",
+									"label":"ワードプロセッサー",
+									"name":"ワードプロセッサー",
+									"category":"Office",
+									"icon":"icon-32-mimetypes-x-office-document",
+									"version":"1.0"
+								}
+					]}
+				]
+			}		
+		},
+		
+		"singleap" : {
+			"type"  : "qface/scene/impl/singleap/Scene",
+			"theme" : "soria",
+			"wallpaper": {
+				"image": "./wallpaper2.jpg",
+				"color": "#696969",
+				"style": "centered",
+				"storedList": []
+			},
+			"app"  : {
+				"sysname":"pst.sample.effect.3DVideo.App",
+				"label":"3Dプレーヤー",
+				"name":"3Dプレーヤー",
+				"category":"Multimedia",
+				"icon":"icon-32-apps-internet-web-browser",
+				"version":"1.0"
+			}
+		}	
+	}
+}	

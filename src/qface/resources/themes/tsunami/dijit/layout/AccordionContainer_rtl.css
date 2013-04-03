@@ -1,0 +1,7 @@
+.dijitRtl .tsunami .dijitAccordionArrow {
+	background-position: 0 top;
+}
+.dijitRtl .tsunami .dijitAccordionTitleSelected .dijitAccordionArrow {
+	
+	background-position: -15px top;
+}

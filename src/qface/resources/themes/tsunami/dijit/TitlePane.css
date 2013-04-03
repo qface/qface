@@ -1,0 +1,48 @@
+
+.tsunami .dijitTitlePaneTitle {
+	background: #cccccc;
+	background:#fff url("images/titleBar.png") repeat-x top left;
+	border:1px solid #bfbfbf;
+	padding:3px 4px;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #6d6d6d;
+}
+.tsunami .dijitTitlePaneTitleHover {
+	background: #f9f9f9 url("images/accordionItemActive.png") top repeat-x;
+}
+.tsunami .dijitTitlePaneTitle * {
+	vertical-align: middle;
+}
+.tsunami .dijitTitlePane .dijitOpen .dijitArrowNode,
+.tsunami .dijitTitlePane .dijitClosed .dijitArrowNode {
+	width:15px;
+	height:15px;
+}
+.tsunami .dijitTitlePaneTextNode {
+	color: #243C5F;
+}
+.tsunami .dijitTitlePane .dijitClosed .dijitArrowNode {
+	background: url('images/spriteRoundedIconsSmall.png') no-repeat -30px top;
+}
+.dj_ie6 .tsunami .dijitTitlePane .dijitClosed .dijitArrowNode {
+	background:url('images/spriteRoundedIconsSmall.gif') no-repeat -30px top;
+}
+.tsunami .dijitTitlePane .dijitOpen .dijitArrowNode {
+	background:url('images/spriteRoundedIconsSmall.png') no-repeat -15px top;
+}
+.dj_ie6 .tsunami .dijitTitlePane .dijitOpen .dijitArrowNode {
+	background:url('images/spriteRoundedIconsSmall.gif') no-repeat -15px top;
+}
+.tsunami .dijitTitlePaneContentOuter {
+	background: #ffffff;
+	border: 1px solid #bfbfbf;
+	border-top: 0;
+}
+.tsunami .dijitTitlePaneContentInner {
+	padding:10px;
+}
+.tsunami .dijitTitlePaneTextNode {
+	margin-left: 4px;
+	margin-right: 4px;
+}

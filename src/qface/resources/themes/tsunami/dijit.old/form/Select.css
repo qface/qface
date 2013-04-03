@@ -1,0 +1,41 @@
+
+.tsunami .dijitSelectError .dijitButtonContents,
+.tsunami .dijitSelectHover .dijitArrowButton,
+.tsunami .dijitSelectActive .dijitArrowButton,
+.tsunami .dijitSelectOpened .dijitArrowButton,
+.tsunami .dijitSelectDisabled .dijitArrowButton,
+.tsunami .dijitSelectReadOnly .dijitArrowButton {
+	background: transparent none;
+}
+.tsunami .dijitSelect .dijitArrowButton {
+	background: #bcd5f0 url("../images/buttonEnabled.png") repeat-x top left;
+	border-width: 0;
+}
+.tsunami .dijitSelectDisabled,
+.tsunami .dijitSelectDisabled TD {
+	border-color: #b9bbdd !important;
+	background:#c3d3e5 url("../images/buttonDisabled.png") top repeat-x;
+}
+.dj_ie .tsunami .dijitSelectDisabled TD * {
+	filter: gray() alpha(opacity=50);
+}
+.tsunami .dijitSelectHover,
+.tsunami .dijitSelectHover TD {
+	border-color:#a5beda #5c7590 #5c7590 #a5beda !important;
+	color:#000;
+	background:#acc5e2 url("../images/buttonHover.png") repeat-x top left;
+}
+.tsunami .dijitSelectActive,
+.tsunami .dijitSelectOpened,
+.tsunami .dijitSelectActive TD,
+.tsunami .dijitSelectOpened TD {
+	border-color:#657c9c !important;
+	background: #91b4e5 url("../images/buttonActive.png") top left repeat-x;
+}
+.tsunami .dijitSelectMenu td {
+	padding: 0;
+}
+.tsunami .dijitSelectMenu .dijitMenuItemLabel,
+.tsunami .dijitSelectMenu .dijitMenuArrowCell {
+	padding: 0.1em 0.2em;
+}

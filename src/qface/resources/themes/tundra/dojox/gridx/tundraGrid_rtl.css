@@ -1,0 +1,17 @@
+.dj_ie .tundra .dojoxGridRtl .dojoxGridHeader table {
+	float:none;
+}
+.tundra .dojoxGridRtl .tundra .dojoxGridCell {
+	text-align:right;
+}
+
+.dj_ie8 .tundra .dojoxGridRtl .tundra.dojoxGridCell {
+	border-left: none;
+}
+.dj_ie .tundra .dojoxGridRtl .dojoxGridMasterView .dojoxGridRowTable {
+	border-left: #e5dac8 1px solid
+}
+
+.tundra .dojoxGridRtl .dojoxGridArrowButtonNode {
+	float:left;
+}

@@ -1,0 +1,63 @@
+
+.tsunami .dijitMenu,
+.tsunami .dijitMenuBar {
+	border: 1px solid #cbcbcb;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+.tsunami .dijitBorderContainer .dijitMenuBar {
+	border:1px solid #B1BADF;
+}
+.tsunami .dijitMenuItem {
+	font-family: sans-serif;
+	margin: 0;
+	color: #243C5F;
+}
+.tsunami .dijitMenuBar .dijitMenuItem {
+	padding: 4px 5px;
+}
+.tsunami .dijitMenuPreviousButton, .tsunami .dijitMenuNextButton {
+	font-style: italic;
+}
+.tsunami .dijitMenuItem TD {
+	padding:1px;
+}
+.tsunami .dijitMenuPassive .dijitMenuItemHover,
+.tsunami .dijitComboBoxMenu .dijitMenuItemHover,
+.tsunami .dijitMenuItemSelected {
+	background-color: #d9e6f9; 
+	color: #243C5F;
+}
+.tsunami .dijitMenuItemIcon {
+	width: 15px;
+	height: 15px;
+}
+.tsunami .dijitMenuExpand {
+	width:15px;
+	height:15px;
+	background-image: url('images/spriteRoundedIconsSmall.png');
+	background-position: -30px top;
+}
+.dj_ie6 .tsunami .dijitMenuExpand {
+	background-image: url('images/spriteRoundedIconsSmall.gif');
+}
+.tsunami .dijitMenuSeparator {
+	height: 1px;
+}
+.tsunami .dijitMenuSeparatorTop {
+	border-bottom: 1px solid #fff; 
+}
+.tsunami .dijitMenuSeparatorBottom {
+	border-top: 1px solid #8ba0bd;
+}
+.tsunami .dijitCheckedMenuItemIconChar {
+	display: none;
+}
+.tsunami .dijitCheckedMenuItemIcon {
+	background-image: url('images/spriteCheckbox.gif');
+	background-position: -80px;
+}
+.tsunami .dijitCheckedMenuItemChecked .dijitCheckedMenuItemIcon {
+	background-position: -64px;
+}

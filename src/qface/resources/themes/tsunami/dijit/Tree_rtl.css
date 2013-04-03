@@ -1,0 +1,18 @@
+
+.dijitRtl .tsunami .dijitTreeNode,
+.dijitRtl .tsunami .dijitTreeExpandoLeaf {
+	
+    background-image: none;
+}
+.dijitRtl .tsunami .dijitTreeContent {
+    padding-left: 0;
+    padding-right: 1px;
+}
+.dijitRtl .tsunami .dijitTreeExpandoOpened {
+	
+	background: url('images/spriteTree_rtl.gif') no-repeat -18px top;
+}
+.dijitRtl .tsunami .dijitTreeExpandoClosed {
+	
+	background-image: url('images/spriteTree_rtl.gif');
+}

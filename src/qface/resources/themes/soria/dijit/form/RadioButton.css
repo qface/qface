@@ -1,0 +1,85 @@
+
+.pc .soria .dijitToggleButton .dijitRadio,
+.pc .soria .dijitToggleButton .dijitRadioIcon {
+	background-image: url('../images/spriteRadio.gif');
+}
+.pc .soria .dijitRadio,
+.pc .soria .dijitRadioIcon	{		
+	background-image: url('../images/spriteRadio.gif'); 
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+}
+.pc .soria .dijitRadio,
+.pc .soria .dijitToggleButton .dijitRadioIcon {
+	
+	background-position: -16px;
+}
+.pc .soria .dijitRadioChecked,
+.pc .soria .dijitToggleButtonChecked .dijitRadioIcon {
+	
+	background-position: 0;
+}
+.pc .soria .dijitRadioDisabled {
+	
+	background-position: -48px;
+}
+.pc .soria .dijitRadioCheckedDisabled {
+	
+	background-position: -32px;
+}
+.pc .soria .dijitRadioHover {
+	
+	background-position: -80px;
+}
+.pc .soria .dijitRadioCheckedHover {
+	
+	background-position: -64px;
+}
+
+/* dojox.mobile.RadioButton */
+.mobile .soria .dijitRadio {
+  position: relative;
+  margin: -0.5em 3px 0.3em 4px;
+  width: 1em;
+  height: 1em;
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 0.5em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#cecece), color-stop(0.5, #f8f8f8), color-stop(0.5, #eeeeee));
+  font: inherit;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-transform: translatey(0.45em);
+  border-color: #9cacc0;
+}
+
+.mobile .soria .dijitRadioChecked,.mobile .soria  .dijitRadio:checked {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7a9de9), to(#2362dd), color-stop(0.5, #366edf), color-stop(0.5, #215fdc));
+}
+
+.mobile .soria .dijitRadioChecked::after,.mobile .soria  .dijitRadio:checked::after {
+  position: absolute;
+  content: "";
+  width: 0.3em;
+  height: 0.6em;
+  top: 0;
+  left: 0.25em;
+  border-width: 0.15em;
+  border-style: none solid solid none;
+  -webkit-transform: rotate(45deg);
+  -webkit-transform-origin: 50% 50%;
+  border-color: white;
+}
+
+.mobile .soria .dijitRadioChecked.dijitRadioSelected,.mobile .soria  .dijitRadio:checked.dijitRadioSelected {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8ea4c1), to(#4a6c9b), color-stop(0.5, #5877a2), color-stop(0.5, #476999));
+}
+
+.mobile .soria .dijitRadioChecked.dijitRadioSelected::after, .mobile .soria .dijitRadio:checked.dijitRadioSelected::after {
+  border-color: white;
+}
+

@@ -1,0 +1,73 @@
+/* TODO: there's alot of things in this that should be in /desktop.css instead of here... */
+
+
+/******************** Taskbar ********************/
+.tsunami .scenePanel {
+  background: url('./images/startbarmid.png');
+}
+/******************** Window List ********************/
+.tsunami #appbar {
+	width: 100%;
+	height: 29px;
+	background-color: transparent;
+	border:0px;
+	padding: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+
+.tsunami .taskBarItem {
+	background-image: url(./images/task.png);
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	margin: 0px;
+	padding: 4px;
+	height: 24px;
+	width: 140px;
+	font-size: 10pt;
+	color: white;
+}
+
+.tsunami .taskBarItem img {
+	vertical-align: middle;
+	margin-right: 5px;
+	margin-left: 5px;	
+	height: 16px;
+	width: 16px;
+}
+
+.tsunami .taskBarItem a {
+	color: white;
+	text-decoration: none;
+}
+
+.tsunami .seperator {
+	background-image: url(./images/separator.png);
+	height:29px;
+	width: 5px;
+	margin-top: -5px;
+}
+/******************** Console ********************/
+.tsunami .console {
+	background-color: #191970;
+	color: white;
+}
+.tsunami .consoleinput {
+	width: 90%;
+	height: 20px;
+	border: none;
+	background-color: black;
+	color: white;
+}
+/******************** Toaster  ********************/
+.tsunami #toaster{
+	background-color: #eeeeee;
+}
+/******************** Menu ********************/
+.tsunami .menubutton-icon
+{
+	background-image: url(./images/launch.png);
+	width: 71px;
+	height: 29px;
+	background-repeat: no-repeat;
+}

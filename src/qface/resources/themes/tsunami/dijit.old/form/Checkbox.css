@@ -1,0 +1,40 @@
+
+.tsunami .dijitToggleButton .dijitCheckBox,
+.tsunami .dijitToggleButton .dijitCheckBoxIcon {
+	background-image: url('../images/spriteCheckbox.gif');
+}
+.tsunami .dijitCheckBox,
+.tsunami .dijitCheckBoxIcon {		
+	background-image: url('../images/spriteCheckbox.gif'); 
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+}
+.tsunami .dijitCheckBox,
+.tsunami .dijitToggleButton .dijitCheckBoxIcon {
+	
+	background-position: -16px;
+}
+.tsunami .dijitCheckBoxChecked,
+.tsunami .dijitToggleButtonChecked .dijitCheckBoxIcon {
+	
+	background-position: 0;
+}
+.tsunami .dijitCheckBoxDisabled {
+	
+	background-position: -48px;
+}
+.tsunami .dijitCheckBoxCheckedDisabled {
+	
+	background-position: -32px;
+}
+.tsunami .dijitCheckBoxHover {
+	
+	background-position: -80px;
+}
+.tsunami .dijitCheckBoxCheckedHover {
+	
+	background-position: -64px;
+}

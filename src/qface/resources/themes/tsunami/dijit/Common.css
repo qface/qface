@@ -1,0 +1,17 @@
+
+.tsunami .dojoDndItemOver {
+	background-image: url(images/treeHover.png);
+}
+.tsunami .dojoDndItemAnchor,
+.tsunami .dojoDndItemSelected {
+	background-color: #B8CBEC;
+}
+.tsunami table.dojoDndAvatar { -moz-border-radius: 0; border: 1px solid #ccc; border-collapse: collapse; background-color: #fff; font-size: 75%; color: black;}
+.tsunami .dojoDndAvatar td	{ border: none; }
+.tsunami .dojoDndAvatar tr	{ border: none; }
+.tsunami .dojoDndAvatarHeader td	{ height: 20px; padding: 0 0 0 21px; }
+.tsunami .dojoDndAvatarItem td { padding: 2px;}
+.tsunami.dojoDndMove .dojoDndAvatarHeader	{background-color: #f58383; background-image: url(images/dndNoMove.png); background-repeat: no-repeat; background-position: 2px center;}
+.tsunami.dojoDndCopy .dojoDndAvatarHeader	{background-color: #f58383; background-image: url(images/dndNoCopy.png); background-repeat: no-repeat; background-position: 2px center;}
+.tsunami.dojoDndMove .dojoDndAvatarCanDrop .dojoDndAvatarHeader	{background-color: #97e68d; background-image: url(images/dndMove.png); background-repeat: no-repeat; background-position: 2px center;}
+.tsunami.dojoDndCopy .dojoDndAvatarCanDrop .dojoDndAvatarHeader	{background-color: #97e68d; background-image: url(images/dndCopy.png); background-repeat: no-repeat; background-position: 2px center;}

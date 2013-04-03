@@ -1,0 +1,59 @@
+<div id="settings" class="view mblView">
+    <script type="text/javascript">
+        function setRef(id, addrRef) {
+                var widget = dijit.byId("infoGroup");
+                var target = dijit.byId(id);
+                var model = widget.get("ref");
+                target.set("ref", model[addrRef]);
+            }
+    </script>
+    <h1 dojoType="dojox.mobile.Heading"> <span dojoType="dojox.mobile.ToolBarButton" label="Home" transitionOptions="{title:'Home',target:'home'}"></span>Data Binding Example</h1>
+    <form name="testForm">    
+    <div class="field-title">Ship to - Bill to Address</div>
+        <div name="infoGroup" class="fieldset" dojoType="dojox.mvc.Group" ref="'names.0'">
+            <div class="field-row">
+                <span>Order #</span>
+                <input type=text name="lastnameInput" dojoType="dojox.mobile.TextBox"
+                    placeholder="Order #" data-dojo-props="value: ref('names.0', 'Serial')"></input>
+            </div>
+            <div class="field-row">
+                <span>Last</span>
+                <input type=text name="serialInput" dojoType="dojox.mobile.TextBox"
+                    placeholder="Last" data-dojo-props="value: ref('names.0', 'Last')"></input>
+            </div>
+            <div class="field-row">
+                <span>Email</span>
+                <input type=text name="emailInput1" dojoType="dojox.mobile.TextBox"
+                    placeholder="Email" data-dojo-props="value: ref('names.0', 'Email')"></input>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <button name="shipto" type="button" dojoType="dojox.mobile.Button" class="mblBlueButton" onclick="setRef('addrGroup', 'ShipTo')">Ship To</button>
+        <button name="billto" type="button" dojoType="dojox.mobile.Button" class="mblBlueButton" onclick="setRef('addrGroup', 'BillTo')">Bill To</button>     
+        <br/>
+        <div class="fieldset" name="addrGroup" dojoType="dojox.mvc.Group" ref="'names.0.ShipTo'">
+            <div class="field-row">
+                <span>Street</span>
+                <input type=text name="streetInput" dojoType="dojox.mobile.TextBox"
+                    placeholder="Street" data-dojo-props="value: ref('names.0.ShipTo', 'Street')"></input>
+            </div>
+            <div class="field-row">
+                <span>City</span>
+                <input type=text name="cityInput" dojoType="dojox.mobile.TextBox"
+                    placeholder="City" data-dojo-props="value: ref('names.0.ShipTo', 'City')"></input>
+            </div>
+            <div class="field-row">
+                <span>State</span>
+                <input type=text name="stateInput" dojoType="dojox.mobile.TextBox"
+                    placeholder="State" data-dojo-props="value: ref('names.0.ShipTo', 'State')"></input>
+            </div>
+            <div class="field-row">
+                <span>ZIP Code</span>
+                <input type=text name="zipInput" dojoType="dojox.mobile.TextBox"
+                    placeholder="ZIP Code" ref="'rel:Zip'"></input>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <button name="reset1" type="button" dojoType="dojox.mobile.Button" class="mblBlueButton" onclick="dijit.byId('infoGroup').get('ref').reset();">Reset</button>
+    </form>
+</div>

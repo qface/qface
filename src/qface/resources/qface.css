@@ -1,0 +1,523 @@
+/*scene.css*/
+html, body {
+	overflow: hidden;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif  !important;
+	font-size: 10pt !important;
+}
+
+.console 
+{
+	overflow: auto;
+	cursor: default;
+	font-family: monospace;
+	font-size: 10pt;
+}
+/* Hide that damn dojo.io.iframe */
+#dojoIoIframe {
+	display: none;
+	opacity: 0;
+	width: 0px;
+	height: 0px;
+	border: 0px;
+}
+
+/*systemPanel */
+
+.systemPanel {
+  background-color : #e8f8f8; /*#f1f1f1#2d2d2d*/
+}
+
+.systemPanel .dijit button {
+	border: 0px none;
+}
+.dijit .systemPanel .sceneApplet {
+	cursor : pointer;
+}
+
+.dijit .systemPanel .sceneApplet .dijitButtonNode button,
+.dijit .systemPanel .sceneApplet .dijitButtonNode,
+.dijit .systemPanel .sceneApplet .dijitToolbar {
+	background: transparent none repeat scroll 0%;
+	border: 0px none;
+	padding: 0px;
+	padding-bottom: 1px;
+}
+.dijit .systemPanel .sceneApplet .dijitToolbar {
+	border: 0px none;
+}
+
+.systemPanel {
+	font-size: 10pt;
+	height: inherit;
+}
+.systemPanel * {
+	font-size: 10pt;
+}
+
+/*background.css*/
+.selectedItem {
+	background-color: #eeeeee;
+}
+/*
+	YOU MUST LEAVE THIS AS THE FIRST RULE DEFINITION
+	(otherwise we cannot change it dynamically)
+*/
+
+
+/*panel.css*/
+.sceneApplet .dijit button {
+	border: 0px none;
+}
+.dijit .scenePanel .sceneApplet .dijitButtonNode button,
+.dijit .scenePanel .sceneApplet .dijitButtonNode,
+.dijit .scenePanel .sceneApplet .dijitToolbar {
+	background: transparent none repeat scroll 0%;
+	border: 0px none;
+	padding: 0px;
+	padding-bottom: 1px;
+}
+.dijit .scenePanel .sceneApplet .dijitToolbar {
+	border: 0px none;
+}
+
+.scenePanel {
+	font-size: 10pt;
+	height: inherit;
+	z-index: 999999;
+}
+.scenePanel * {
+	font-size: 10pt;
+}
+.scenePanel-start, .scenePanel-end, .scenePanel-middle {
+	height: inherit;
+}
+
+/* Applets */
+.sceneApplet {
+	position: absolute;
+	height: inherit;
+}
+.scenePanelHorizontal .sceneApplet {
+	height: 100%;
+}
+.scenePanelVertical .sceneApplet {
+	width: 100%;
+}
+.sceneAppletHandle {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #666;
+	display: none;
+	z-index: 1000;
+}
+.scenePanelHorizontal .sceneAppletHandle {
+	height: 100%;
+	width: 10px;
+}
+.scenePanelVertical .sceneAppletHandle {
+	width: 100%;
+	height: 10px;
+}
+.sceneAppletHandleShow {
+	display: block;
+	cursor: move;
+}
+.scenePanel {
+	position: absolute;
+	background-color: white;
+	/*overflow: hidden;*/
+}
+.sceneAppletFullspan .sceneAppletContent {
+	width: 100%;
+	height: 100%;
+}
+.uiArea {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: none;
+}
+.uiAreaContainer {
+	z-index: 90;
+}
+.uiAreaWidget {
+	display: none;
+	z-index: 100;
+}
+div.mainFileArea {
+	z-index: 6;
+    position: absolute;
+}
+.wallpaper {
+	z-index: 20;
+	background-position: 50% 50%;
+}
+/****** Widget Layer *******/
+.widgetLayer {	
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+/* taskbar */
+
+.taskBarItem {
+	cursor: pointer;
+	font-size: 10pt;
+	white-space: nowrap;
+	text-align: center;
+	overflow: hidden;
+}
+
+.taskBarItem img {
+	vertical-align: middle;
+	margin-right: 5px;
+	margin-left: 5px;	
+	height: 16px;
+	width: 16px;
+}
+
+/*statusbar.css*/
+.sceneStatusBar .dijitProgressBar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 120px;
+}
+.sceneStatusBar {
+    position: relative;
+}
+
+/*window.css*/
+.win-handle {
+	cursor: hand;
+}
+
+.win {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+
+.win-tl {
+	position: relative;
+	z-index: 1;
+    background-repeat: no-repeat;
+    /* default formatting */
+    height: 20px;
+}
+
+.win-tr {
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.win-tc {
+	overflow: hidden;
+	background-repeat: repeat-x;
+	vertical-align: middle;
+}
+
+.win-title {
+	white-space: nowrap;
+	width: auto;
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	z-index: 1;
+	cursor: default;
+}
+.win-buttons {
+	background-repeat: no-repeat;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	right: 0px;
+	z-index: 10;
+}
+
+.win-max,
+.win-min,
+.win-close,
+.win-full {
+	float: right;
+	background-repeat: no-repeat;
+    /* default formatting */
+    width: 10px;
+    height: 10px;
+}
+
+.win-bmw {
+	position: relative;
+	height: 100%;
+}
+
+.win-ml {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background-repeat: repeat-y;
+	height: 100%;
+}
+
+.win-mr {
+	background-repeat: repeat-y;
+	background-position: top right;
+	height: 100%;
+}
+
+.win-mc {
+	overflow: hidden;
+	height: 100%; /* temporary untill I find a better solution */
+    /* default formatting */
+    background: white;
+}
+
+.win-bl {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background-repeat: no-repeat;
+}
+
+.win-br {
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.win-bc {
+	background-repeat: repeat-x;
+}
+
+.win-resize {
+	z-index: 100;
+	position: absolute;
+}
+
+.win-icon {
+	float: left;
+	margin-right: 5px;
+}
+
+/*if not IE we can use the method that works :D */
+
+.win > .win-bmw,
+.win-bmw > .win-ml,
+.win-ml > .win-mr,
+.win-mr > .win-mc {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: auto;
+	width: auto;
+}
+
+.win-bmw > .win-bl {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.dojoxResizeHandleClone {
+	position:absolute; top:0; left:0; 
+	border:1px dashed #666; 
+	z-index:999; 
+}
+
+/* default formatting */
+
+.win .win-bmw {
+    top: 20px;
+}
+
+/* nabibar */
+
+#navBar ol, ul,li {
+	list-style:none;
+}
+
+.navBar{
+	background:url(./images/navBg0.png) no-repeat center center;
+	text-align:center;
+}
+.navBar a{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	outline:none
+}
+
+.scene-list a{
+	background:url("./images/navbg.png") no-repeat left top;
+} 
+
+.scene-list a:hover{
+	background-position: -48px top;
+}
+
+.scene-list a.currTab{
+	background-position:-24px top;
+}	
+
+.action-list {
+	float:right;
+	margin: 4px 8px 0 0;
+}
+
+.navScreen{
+	width:73px;
+	/*height:auto;*/
+	background:url(./images/dock_top.png) repeat-y left top;
+	-moz-box-shadow: 0px 3px 15px #444;
+	-webkit-box-shadow: 0px 3px 15px #444;
+	box-shadow:0px 3px 15px #444;
+}
+
+
+html[dir='ltr'] .findbar {
+  left: 68px;
+}
+
+html[dir='rtl'] .findbar {
+  right: 68px;
+}
+
+.findbar label {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+}
+
+.search-bar {
+  border: 1px solid hsla(0,0%,0%,.5);
+  border-radius: 2px;
+  width:235px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  margin:36px auto;
+}
+.search-bar:after, .search-bar:before {
+  bottom: -10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  right:13px;
+}
+.search-bar:after {
+  border-bottom-color: hsla(0,0%,32%,.99);
+  border-width: 8px;
+}
+.search-bar:before {
+  border-bottom-color: hsla(0,0%,0%,.5);
+  border-width: 9px;
+}
+
+/*ListView*/
+.listItem {
+	cursor : pointer;
+	width: 80px;
+	text-align: center;
+}
+
+.listItemIcon {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.listItemIconSelected, .listItemIconHover {
+	opacity: 0.8;
+	filter: Opacity(80);
+}
+
+.iconLabel, .shadowHidden, .shadowFront, .shadowBack {
+	width: 80px;
+	position: relative;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.shadowFront, .shadowBack {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+.shadowFront {
+	z-index: 10;
+	color: white;
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+.shadowBack {
+	z-index: 1;
+	color: black;
+	margin-left: 1px;
+	margin-top: 1px;
+}
+.shadowHidden {
+	visibility: hidden;
+}
+
+.ghost {
+	opacity: 0.7;
+	filter: Opacity(70);
+}
+
+.actived {
+    border-width:1px;
+    border-style:solid;
+    border-bottom-color:#aaa;
+    border-right-color:#aaa;
+    border-top-color:#ddd;
+    border-left-color:#ddd;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+.loading{
+	
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 948;
+	display: block;
+	opacity: 1.0;
+	
+}
+
+.error {
+	background-color: red;
+}
+
+.loading table {
+	width: 100%;
+	height: 100%;
+}
+.loading td {
+	text-align: center;
+	font-size:200%;
+	font-color: #666666;
+	
+}
+.loading td span {
+	width: 200px;
+	height: 200px;
+	background-image: url('./images/loading.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+}

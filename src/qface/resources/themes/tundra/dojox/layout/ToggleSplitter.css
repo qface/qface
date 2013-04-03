@@ -1,0 +1,73 @@
+.tundra .dijitBorderContainer .dijitSplitterH {
+	height: 6px;
+}
+.tundra .dijitBorderContainer .dijitSplitterV {
+	width: 6px;
+}
+.tundra .dijitBorderContainer .dijitSplitterH .dojoxToggleSplitterIcon {
+	background-image: url('icons/splitterToggleH.png');
+	background-repeat: no-repeat;
+	width: 71px;
+	height: 6px;
+	top: 0;
+	left: 45%;
+	cursor: pointer;
+}
+.tundra .dijitBorderContainer .dijitSplitterV .dojoxToggleSplitterIcon {
+	background-image: url('icons/splitterToggleV.png');
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	width: 6px;
+	height: 71px;
+	left: 0;
+	top: 45%;
+	cursor: pointer;
+}
+.tundra .dojoxToggleSplitterTop .dojoxToggleSplitterIconOpen, 
+.tundra .dojoxToggleSplitterBottom .dojoxToggleSplitterIconClosed {
+	background-position: 0 -12px !important;
+}
+.tundra .dojoxToggleSplitterBottom .dojoxToggleSplitterIconOpen, 
+.tundra .dojoxToggleSplitterTop .dojoxToggleSplitterIconClosed {
+	background-position: 0 0 !important;
+}
+.tundra .dojoxToggleSplitterLeft .dojoxToggleSplitterIconOpen, 
+.tundra .dojoxToggleSplitterRight .dojoxToggleSplitterIconClosed {
+	background-position: -12px 0 !important;
+}
+.tundra .dojoxToggleSplitterRight .dojoxToggleSplitterIconOpen, 
+.tundra .dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosed {
+	background-position: 0 0 !important;
+}
+.tundra .dojoxToggleSplitterTop .dojoxToggleSplitterIconOpenHover, 
+.tundra .dojoxToggleSplitterBottom .dojoxToggleSplitterIconClosedHover {
+	background-position: 0 -18px !important;
+}
+.tundra .dojoxToggleSplitterBottom .dojoxToggleSplitterIconOpenHover, 
+.tundra .dojoxToggleSplitterTop .dojoxToggleSplitterIconClosedHover {
+	background-position: 0 -6px !important;
+}
+.tundra .dojoxToggleSplitterLeft .dojoxToggleSplitterIconOpenHover, 
+.tundra .dojoxToggleSplitterRight .dojoxToggleSplitterIconClosedHover {
+	background-position: -18px 0 !important;
+}
+.tundra .dojoxToggleSplitterRight .dojoxToggleSplitterIconOpenHover, 
+.tundra .dojoxToggleSplitterLeft .dojoxToggleSplitterIconClosedHover {
+	background-position: -6px 0 !important;
+}
+.tundra .dojoxToggleSplitterTop .dojoxToggleSplitterA11y,
+.tundra .dojoxToggleSplitterBottom .dojoxToggleSplitterA11y {
+	display: none;
+	font-size: 6px;
+	text-align: center;
+}
+.tundra .dojoxToggleSplitterRight .dojoxToggleSplitterA11y,
+.tundra .dojoxToggleSplitterLeft .dojoxToggleSplitterA11y {
+	display: none;
+	font-size: 8px;
+	position: relative;
+	top: 48%;
+}
+.dijit_a11y .tundra .dojoxToggleSplitterA11y {
+	display: block;
+}

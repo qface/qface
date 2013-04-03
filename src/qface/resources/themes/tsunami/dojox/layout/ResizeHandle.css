@@ -1,0 +1,40 @@
+.tsunami .dojoxResizeHandle {
+	float: right;
+	position: absolute;
+	right: 2px;
+	bottom: 2px;
+	width: 13px;
+	height: 13px;
+	z-index: 20;
+	background-image: url('icons/resize.png');
+	line-height: 0px;
+}
+.dijitRtl .tsunami .dojoxResizeHandle {
+        float: right;
+        left: 0px;
+        right: auto;
+	background-image: url('icons/resizeRtl.png');
+}
+.tsunami .dojoxResizeNW {
+	cursor: nw-resize;
+}
+.dijitRtl .tsunami .dojoxResizeNW {
+        cursor: ne-resize;
+}
+.tsunami .dojoxResizeNE {
+	cursor: ne-resize; 
+}
+.dijitRtl .tsunami .dojoxResizeNE {
+        cursor: nw-resize;
+}
+.tsunami .dojoxResizeW {
+	cursor: w-resize; 
+}
+.tsunami .dojoxResizeN { 
+	cursor: n-resize; 
+}
+.tsunami .dojoxResizeHandleClone {
+	position:absolute; top:0; left:0; 
+	border:1px dashed #666; 
+	z-index:999; 
+}

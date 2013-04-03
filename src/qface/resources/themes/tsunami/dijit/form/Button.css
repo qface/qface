@@ -1,0 +1,105 @@
+
+.tsunami .dijitButtonNode {
+	
+	border: 1px solid #8ba0bd;
+	border-bottom:1px solid #657c9c;
+	padding: 0.1em 0.2em 0.2em 0.2em;
+	background: #bcd5f0 url("../images/buttonEnabled.png") repeat-x top left;
+}
+.tsunami .dijitButtonText {
+	text-align: center;
+	padding: 0 0.3em;
+}
+.tsunami .dijitInputField {
+	padding: 0; 
+}
+.tsunami .dijitArrowButton {
+	color: #111;
+}
+.tsunami .dijitComboButton .dijitDownArrowButton {
+	padding-right:4px;
+}
+.tsunami .dijitTextBoxReadOnly,
+.tsunami .dijitTextBoxReadOnly .dijitButtonNode,
+.tsunami .dijitButtonDisabled .dijitButtonNode,
+.tsunami .dijitToggleButtonDisabled .dijitButtonNode,
+.tsunami .dijitDropDownButtonDisabled .dijitButtonNode,
+.tsunami .dijitComboButtonDisabled .dijitButtonNode,
+.tsunami .dijitTextBoxDisabled,
+.tsunami .dijitTextBoxDisabled .dijitButtonNode {
+	
+	border-color: #b9bbdd #b9bbdd #b9bbdd #b9bbdd;
+	background:#c3d3e5 url("../images/buttonDisabled.png") top repeat-x;
+	opacity: 0.60;
+}
+.dj_ie6 .tsunami .dijitReadOnly input,
+.dj_ie7 .tsunami .dijitReadOnly input,
+.dj_ie6 .tsunami .dijitComboButtonDisabled .dijitButtonText,
+.dj_ie7 .tsunami .dijitComboButtonDisabled .dijitButtonText {
+	
+	color: #aaa;
+}
+.tsunami .dijitButtonHover .dijitButtonNode,
+.tsunami .dijitButtonNodeHover,
+.tsunami .dijitToggleButtonHover .dijitButtonNode,
+.tsunami .dijitDropDownButtonHover .dijitButtonNode,
+.tsunami .dijitButtonContentsHover,
+.tsunami .dijitUpArrowButtonHover,
+.tsunami .dijitDownArrowButtonHover {
+	
+	
+	color:#243C5F;
+	background:#acc5e2 url("../images/buttonHover.png") repeat-x top left;
+}
+.tsunami .dijitButtonActive .dijitButtonNode,
+.tsunami .dijitToggleButtonActive .dijitButtonNode,
+.tsunami .dijitDropDownButtonActive .dijitButtonNode,
+.tsunami .dijitComboButtonActive .dijitButtonContents,
+.tsunami .dijitStackController .dijitToggleButtonChecked .dijitButtonNode {
+	
+	border-color:#657c9c;
+	background: #91b4e5 url("../images/buttonActive.png") top left repeat-x;
+}
+.tsunami .dijitUpArrowButtonActive,
+.tsunami .dijitDownArrowButtonActive {
+	
+	background: #91b4e5 url("../images/buttonActive.png") top left repeat-x;
+}
+.tsunami .dijitArrowButtonInner {
+	background-image: url("../images/spriteArrows.png");
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	width: 11px;
+	height: 11px;
+}
+.tsunami .dijitComboBox .dijitArrowButtonInner {
+        background-position: 0 center;
+}
+.tsunami .dijitLeftArrowButton .dijitArrowButtonInner {
+	background-position: -11px center;
+}
+.tsunami .dijitUpArrowButton .dijitArrowButtonInner {
+	background-position: -22px center;
+}
+.tsunami .dijitRightArrowButton .dijitArrowButtonInner {
+	background-position: -33px center;
+}
+.dj_ie6 .tsunami .dijitArrowButtonInner {
+	background-image: url("../images/spriteArrows.gif");
+}
+.dj_ie .tsunami .dijitSpinner .dijitUpArrowButton .dijitArrowButtonInner {
+	margin-top: 1px; 
+}
+.tsunami .dijitSpinnerButtonContainer {
+	width: auto;
+	padding: 0;
+}
+.tsunami .dijitSpinner .dijitArrowButton {
+	width: 15px;
+}
+.tsunami .dijitSpinner .dijitSpinnerButtonInner {
+	width: 15px;
+}
+.tsunami .dijitSpinner .dijitArrowButtonInner .dijitInputField {
+	padding: 0;
+}

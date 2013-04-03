@@ -1,0 +1,297 @@
+
+ .tsunami .dijitTabContainer .tabStripRBtn {
+	margin-right: 21px;
+}
+ .tsunami .dijitTabContainer .tabStripLBtn {
+	margin-left: 21px;
+}
+ .tsunami .nowrapTabStrip .dijitTab {
+	top: 2px;
+}
+ .tsunami .dijitTabContainerBottom-tabs .dijitTab {
+	top: -1px;
+	bottom: 2px;
+}
+.tsunami .dijitTabPaneWrapper {
+	background:#fff;
+	border:1px solid #B1BADF;
+	margin: 0;
+	padding-left: 0;
+}
+.tsunami .dijitTab {
+    padding:4px 6px 2px 4px;
+    background: url("../images/tabContainerSprite.gif") repeat-x 0 -351px;
+    position: relative;
+	line-height:normal;
+	margin:0 2px 0 0;	
+	color: #243C5F;
+    border: 1px #8BA0BD solid;
+	border-bottom: 1px #B1BADF solid;
+}
+.tsunami .dijitTabHover {
+	color: #243C5F;
+	background: url("../images/tabContainerSprite.gif") repeat-x 0 -201px;
+}
+.tsunami .dijitTabChecked
+{
+	background: url("../images/tabContainerSprite.gif") repeat-x 0 -51px;
+	color: #243C5F !important;
+}
+.tsunami .dijitTabListWrapper {
+	z-index: 10;
+}
+.tsunami .dijitTabContainerTabListNested {
+	background: #D9E9F9;
+	border: none;
+}
+.tsunami .dijitTabContainerTabListNested .dijitTab {
+	background: none;
+	border: none;
+	top: 0;	
+}
+.tsunami .dijitTabContainerTabListNested .dijitTabHover .tabLabel {
+	text-decoration: underline;
+}
+.tsunami .dijitTabContainerTabListNested .dijitTabChecked .tabLabel {
+	text-decoration: underline;
+	font-weight: bold;
+}
+.tsunami .dijitTabContainerSpacerNested .dijitTabSpacer {
+	
+	height: 0;
+}
+.tsunami .dijitTabPaneWrapperNested {
+	border: none;	
+}
+.tsunami .dijitTabCloseButton {
+	width: 15px;
+	height: 15px;
+	background: url("../images/spriteRoundedIconsSmall.png") no-repeat -60px top;
+	margin-top: -1px;
+}
+.dj_ie6 .tsunami .dijitTabCloseButton {
+	background: url("../images/spriteRoundedIconsSmall.gif") no-repeat -60px top;
+}
+.tsunami .dijitTabCloseButtonHover {
+	background: url("../images/spriteRoundedIconsSmall.png") no-repeat -60px -15px;
+}
+.dj_ie6 .tsunami .dijitTabCloseButtonHover {
+	background: url("../images/spriteRoundedIconsSmall.gif") no-repeat -60px -15px;
+}
+.tsunami .dijitTabContainerTop-tabs {
+	border-color: #B1BADF;
+	padding-left: 3px;
+}
+.tsunami .dijitTabContainerTop-tabs .dijitTab {
+    border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+}
+.tsunami .dijitTabContainerTopNoStrip {
+	padding-top: 3px;
+}
+.tsunami .dijitTabContainerTop-container {
+	border-top: none;
+}
+.tsunami .dijitTabContainerTop .dijitTabListWrapper {
+	border-bottom: none;
+}
+.tsunami .dijitTabContainerTop-tabs .dijitTab {
+	top: 1px;
+}
+.tsunami .dijitTabContainerTop-tabs .dijitTabChecked {
+	border-bottom-color: #94b4e6;
+}
+.tsunami .dijitTabContainerTopStrip {
+	border: 1px solid #B1BADF;
+	margin-top: 1px;
+	padding-top: 1px;
+	background: #F0F4FC;
+}
+.tsunami .dijitTabContainerTopStrip .dijitTabContainerTop-tabs {
+	padding-left: 3px;
+}
+.tsunami .dijitTabContainerNested .dijitTabListWrapper {
+	height: auto;
+}
+.tsunami .dijitTabContainerBottom-tabs {
+	margin-top: -1px;
+	padding-left: 3px;
+	border-top: 1px solid #B1BADF;
+}
+.tsunami .dijitTabContainerBottom .dijitTabListWrapper {
+	border-top: none;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	float: left;
+}
+.tsunami .dijitTabContainerBottom-tabs .dijitTab {
+    border-bottom: none;
+    border-top: 1px solid #B1BADF;
+    border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: url("../images/tabBottomEnabledC.gif") repeat-x bottom left;
+}
+.tsunami .dijitTabContainerBottom-tabs .dijitTabHover {
+	background: url("../images/tabBottomHoverC.gif") repeat-x bottom left;
+}
+.tsunami .dijitTabContainerBottom-tabs .dijitTabChecked  {
+    border-top-color:#94b4e6;
+	background: url("../images/tabBottomActiveC.gif") repeat-x bottom left;
+}
+.tsunami .dijitTabContainerBottom-container {
+	border-bottom: none;
+}
+.tsunami .dijitTabContainerBottomStrip {
+	padding-bottom: 2px;
+	border: 1px solid #B1BADF;
+}
+.tsunami .dijitTabContainerBottomStrip {
+	background: #F0F4FC;
+}
+.tsunami .dijitTabContainerBottom-spacer,
+.tsunami .dijitTabContainerTop-spacer {
+	height: 2px;
+	border: 1px solid #8ba0bd;
+	background: #94b4e6;
+}
+.tsunami .dijitTabContainerTop-spacer {
+	border-top: none;
+}
+.tsunami .dijitTabContainerBottom-spacer {
+	border-bottom: none;
+}
+.tsunami .dijitTabContainerRight-tabs {
+	height: 100%;
+	border-color: #ccc;
+	padding-top: 3px;
+}
+.tsunami .dijitTabContainerRight-tabs .dijitTab {
+    border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-bottom: none;
+    border-left: 1px solid #B1BADF;
+    border-bottom: 1px solid #B1BADF !important;
+    padding:  4px 6px 2px 8px;
+}
+.tsunami .dijitTabContainerRight-tabs .dijitTabChecked {
+	border-left-color: #94b4e6;
+    background: url("../images/tabRightChecked.gif") no-repeat left top !important;
+}
+.tsunami .dijitTabContainerRight-container {
+	border-right: none;
+}
+.dj_ie6 .tsunami .dijitTabContainerRight-tabs .dijitTab,
+.dj_ie7 .tsunami .dijitTabContainerRight-tabs .dijitTab {
+	border-bottom: solid #B1BADF 1px;
+	margin-bottom: -1px;
+}
+.dj_ie6 .tsunami .dijitTabContainerRight-tabs .dijitTabChecked,
+.dj_ie7 .tsunami .dijitTabContainerRight-tabs .dijitTabChecked,
+.dj_ie6 .tsunami .dijitTabContainerRight-tabs .dijitTabCheckedHover,
+.dj_ie7 .tsunami .dijitTabContainerRight-tabs .dijitTabCheckedHover {
+	border-bottom: solid #94b4e6 1px;
+	margin-bottom: -1px;
+}
+.tsunami .dijitTabContainerRightStrip {
+	padding-right: 2px;
+	border: 1px solid #B1BADF;
+	background: #F0F4FC;
+	border-left: none;
+}
+.tsunami .dijitTabContainerLeft-tabs {
+	border-color: #ccc;
+	padding-top: 3px;
+	height: 100%;
+}
+.tsunami .dijitTabContainerLeft-tabs .dijitTab {
+    border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-right: 1px solid #B1BADF;
+    border-bottom: 1px solid #B1BADF;
+}
+.tsunami .dijitTabContainerLeft-tabs .dijitTabChecked {
+	border-right: 1px solid #94b4e6;
+    background: url("../images/tabLeftChecked.gif") no-repeat right top;
+}
+.tsunami .dijitTabContainerLeft-container {
+	border-left: none;
+}
+.dj_ie6 .tsunami .dijitTabContainerLeft-tabs .dijitTab,
+.dj_ie7 .tsunami .dijitTabContainerLeft-tabs .dijitTab {
+	border-bottom: solid #B1BADF 1px;
+	margin-bottom: -1px;
+}
+.dj_ie6 .tsunami .dijitTabContainerLeft-tabs .dijitTabChecked .dijitTab,
+.dj_ie7 .tsunami .dijitTabContainerLeft-tabs .dijitTabChecked .dijitTab,
+.dj_ie6 .tsunami .dijitTabContainerLeft-tabs .dijitTabCheckedHover .dijitTab,
+.dj_ie7 .tsunami .dijitTabContainerLeft-tabs .dijitTabCheckedHover .dijitTab {
+	border-bottom: solid #94b4e6 1px;
+	margin-bottom: -1px;
+}
+.tsunami .dijitTabContainerLeftStrip {
+	padding-left: 2px;
+	border: 1px solid #B1BADF;
+	background: #F0F4FC;
+	border-right: none;
+}
+.tsunami .dijitTabContainerLeft-tabs .dijitTab,
+.tsunami .dijitTabContainerRight-tabs .dijitTab {
+    margin: 1px 0;	
+}
+.tsunami .dijitTabContainerLeft-spacer,
+.tsunami .dijitTabContainerRight-spacer {
+	width: 2px;
+	border: 1px solid #8ba0bd;
+	background: #94b4e6;
+}
+.tsunami .dijitTabContainerLeft-spacer {
+	border-left: none;
+}
+.tsunami .dijitTabContainerRight-spacer {
+	border-right: none;
+}
+.tsunami .dijitTabContainerTop-dijitContentPane .dijitTabContainerTop-tabs {
+	border-left: 0 solid #ccc;
+	border-top: 0 solid #ccc;
+	border-right: 0 solid #ccc;
+	padding-top: 0;
+	padding-left: 0;
+}
+.tsunami .dijitTabContainer .tabStripButton {
+	margin-right: 0;
+}
+.tsunami .dijitTabContainer .tabStripButton-top {
+	margin-top: 1px;
+}
+.dj_ie6 .tsunami .tabStripButton .dijitTabContent,
+.dj_ie7 .tsunami .tabStripButton .dijitTabContent {
+	padding-top: 7px;
+}
+.dj_ie6 .tsunami .tabStrip-disabled .tabStripButton .dijitTabContent,
+.dj_ie7 .tsunami .tabStrip-disabled .tabStripButton .dijitTabContent {
+	padding-top: 6px;
+}
+.tsunami .dijitTabContainer .tabStripButton-bottom {
+	background: transparent url(../images/tabBottomEnabledSpriteLR.gif) no-repeat scroll left bottom;
+	border-bottom: medium none;
+	border-top: 1px solid #B1BADF;
+}
+.tsunami .dijitTabContainer .tabStripButton-bottom .dijitTab {
+	background: transparent url(../images/tabBottomEnabledSpriteLR.gif) no-repeat scroll right bottom;
+}
+.tsunami .dijitTabStripIcon {
+	height: 14px;
+	width: 14px;
+	background: url(../images/spriteRoundedIconsSmall.png) no-repeat left top ;
+}
+.dj_ie6 .tsunami .dijitTabStripIcon {
+	background-image: url(../images/spriteRoundedIconsSmall.gif);
+}
+.tsunami .dijitTabStripSlideRightIcon {
+	background-position: -30px top;
+}
+.tsunami .dijitTabStripMenuIcon {
+	background-position: -15px top;
+}

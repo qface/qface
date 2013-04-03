@@ -1,0 +1,15 @@
+.dj_ie .soria .dojoxGridRtl .dojoxGridHeader table {
+	float:none;
+}
+.soria .dojoxGridRtl .dojoxGridCell {
+	text-align:right;
+}
+.dj_ie8 .soria .dojoxGridRtl .dojoxGridCell {
+	border-left: none;
+}
+.dj_ie .soria .dojoxGridRtl .dojoxGridMasterView .dojoxGridRowTable {
+	border-left: #e5dac8 1px solid
+}
+.soria .dojoxGridRtl .dojoxGridArrowButtonNode {
+	float:left;
+}

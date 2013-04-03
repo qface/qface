@@ -1,0 +1,7 @@
+
+.dijitRtl .tsunami .dijitEditorIcon {
+	background-image: url('../../../images/icons/images/editorIconsEnabled_rtl.png'); 
+}
+.dijitRtl .tsunami .dijitDisabled .dijitEditorIcon {
+	background-image: url('../../../images/icons/images/editorIconsDisabled_rtl.png'); 
+}
