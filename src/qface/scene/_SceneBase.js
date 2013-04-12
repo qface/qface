@@ -70,7 +70,7 @@ define([
 			//		a callback once the app has initiated
 	        //	onError:
 	        //	    if there was a problem launching the app, this will be called
-			topic.publish("qface/scene/launchApp", [this,sysname,name]);
+			topic.publish("/qface/scene/launchApp", [this,sysname,name]);
 			logger.log("launching app "+name);
 	        var d = new dojo.Deferred();
 	        if(onComplete) d.addCallback(onComplete);
@@ -103,7 +103,7 @@ define([
 						instance.init(args||{});
 					}
 					catch(e){
-			            topic.publish("qface/scene/launchAppEnd", [this,sysname,name,false]);
+			            topic.publish("/qface/scene/launchAppEnd", [this,sysname,name,false]);
 						console.error(e);
 		                d.errback(e);
 		                return;
@@ -111,13 +111,13 @@ define([
 					instance.status = "active";
 				}
 				catch(e){
-		            topic.publish("qface/scene/launchAppEnd", [this,sysname,name,false]);
+		            topic.publish("/qface/scene/launchAppEnd", [this,sysname,name,false]);
 					console.error(e);
 		            d.errback(e);
 		            return;
 				}
 				d.callback(instance);
-		        topic.publish("qface/scene/launchAppEnd", [this,sysname,name,true]);
+		        topic.publish("/qface/scene/launchAppEnd", [this,sysname,name,true]);
 			}));
 		},
 		//PROCESS MANAGEMENT FUNCTIONS

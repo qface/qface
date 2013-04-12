@@ -46,14 +46,18 @@ define([
             
             player.play("BigBuckBunny_640x360.mp4");
             
+            if (args.paused) {
+            	player.pause();
+            }
+            
             var self = this;
-            topic.subscribe("qface/scene/hide",function(scene){
+            topic.subscribe("/qface/scene/hide",function(scene){
             	if (self.scene == scene) {
             		self.player.pause();
             	}	
             });
             
-            topic.subscribe("qface/scene/show",function(scene){
+            topic.subscribe("/qface/scene/show",function(scene){
             	if (self.scene == scene) {
             		self.player.play();
             	}	

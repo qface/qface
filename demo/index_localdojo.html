@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html role="application" lang="ja">
+	<head>
+		<title>Qface Platform デモシステム</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<link type="text/css" rel="stylesheet" media="screen" href="../lib/dojo/resources/dojo.css" />
+        <link type="text/css" rel="stylesheet" media="screen" href="../src/qface/resources/qface_rtl.css" />
+		<style>
+			.welcome {
+				height: 80%;
+				width: 80%;
+				margin:0 auto;
+				text-align: center;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			dojoConfig = {
+							async:true,
+							isDebug:true,
+							extraLocale: ["'ja","ja-jp"],
+							baseUrl:"../",
+							packages:[
+										{
+											name:"dojo",
+											location:"lib/dojo"
+										},
+										{
+											name:"dijit",
+											location:"lib/dijit"
+										},
+										{
+											name:"dojox",
+											location:"lib/dojox"
+										},
+										{
+											name:"qface",
+											location:"src/qface"
+										},
+										{
+											name:"apps",
+											location:"demo/apps"
+										},
+										{
+											name:"demo",
+											location:"demo"
+										}										
+
+									]
+						};
+		</script>
+		
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/dojo/1.8.3/dojo/dojo.js"></script>
+	    <script type="text/javascript">
+			// Require the registry, parser, Dialog, and wait for domReady
+			// Require the registry, parser, Dialog, and wait for domReady
+			require([
+				"dojo/json",
+				"dijit/dijit-all",
+				"qface/Runtime",
+				"demo/Desktop",
+				"dojo/text!./config.json",              
+				"dojo/domReady!"
+			], function(JSON,dijit,Runtime,Desktop,txtConfig) {
+				var config;
+				try {
+					 config = JSON.parse(txtConfig);
+				} catch(e) {
+					throw e;
+				}
+
+				Runtime.run(Desktop,config);
+			});
+		</script> 			
+				
+	</head>
+	<body  class="dijit" onselectstart="return false" oncontextmenu="return false" ondragstart="return false">
+		<noscript>
+			<div style="text-align: center; margin-top: 15%; font-size: 20px;">
+				<div>You must have javascript enabled to use the desktop.</div>
+				<div>Please enable javascript and refresh the page to continue.</div>
+			</div>
+		</noscript>
+	</body>
+</html>

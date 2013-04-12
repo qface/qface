@@ -268,7 +268,7 @@ define([
 		
 		postCreate: function(){
 			
-			on(this.iconNode, "dblclick", lang.hitch(this,this._onDblClick));
+			on(this.iconNode, "click", lang.hitch(this,this._onClick));
 			on(this.labelNode, "dblclick", lang.hitch(this,this.rename));
 			
 			on(this.domNode,"mouseover",lang.hitch(this,function(){
@@ -309,7 +309,7 @@ define([
 			return name;
 		},
 		
-		_onDblClick: function(e){
+		_onClick: function(e){
 			this.getParent().onItem(this.sysname,this.name);
 		},
 		highlight: function(){

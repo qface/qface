@@ -46,7 +46,7 @@ define([
 
 		    var app = config.app;
 		    
-		    this.launch(app.sysname,{});
+		    this.launch(app.sysname,app.name,app.args||{});
 		},
 		
 		addWindow : function(win,args){

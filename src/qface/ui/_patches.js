@@ -2,31 +2,10 @@ define([
 	"dojo/aspect",
 	"dojo/_base/lang",
 	"dijit/_WidgetBase",
-	"../_ComponentMixin",
-	"./drawing/Canvas"
+	"../_ComponentMixin"
 ], function(aspect,lang,_WidgetBase,_ComponentMixin,Canvas){
 	lang.extend(_WidgetBase, /*===== {} || =====*/ _ComponentMixin.prototype);
 	
-	lang.extend(_WidgetBase, /*===== {} || =====*/ {
-		getCanvas : function() {
-			if (!this._canvas) {
-				var p = this.containerNode ? this.cotainerNode : this.domNode;
-				c = new Canvas({
-					position : "absolute",
-					left     : "0px",
-					"top"    : "0px",
-					"width"  : "100%",
-					"height  " "100%"
-				});
-				p.appendChild(c.element);			
-			}
-		
-			return this._canvas;
-		}
-	
-	});
-
-
 	aspect.before(_WidgetBase.prototype, "postscript", function(/*Object?*/ params, /*DomNode|String*/ srcNodeRef){
 		if (this.isOwner && this.isOwner()) {
 			this._components = {};

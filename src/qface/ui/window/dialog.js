@@ -197,7 +197,7 @@ define([
 		{
 			//	summary:
 			//		Show a toaster popup (similar to libnotify)
-			topic.publish("qface/notification", [message]);
+			topic.publish("/qface/notification", [message]);
 		}
 	});
 	

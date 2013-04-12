@@ -136,7 +136,7 @@ define([
 			else onEnd();
 		},
 	    setupLaunchApp: function(){
-	        this._onLaunch = topic.subscribe("qface/scene/launchApp", lang.hitch(this, function(scene,sysname,name){
+	        this._onLaunch = topic.subscribe("/qface/scene/launchApp", lang.hitch(this, function(scene,sysname,name){
 		        	if (this.scene !== scene) {
 		        		return;
 		        	};	
@@ -148,7 +148,7 @@ define([
 		                load: true
 		            }
 			        );
-		            var onEnd = topic.subscribe("qface/scene/launchAppEnd",function(){
+		            var onEnd = topic.subscribe("/qface/scene/launchAppEnd",function(){
 						topic.unsubscribe(onEnd);
 						store.deleteItem(item);
 					});

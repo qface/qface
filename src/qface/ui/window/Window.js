@@ -188,7 +188,7 @@ define([
 	    //      Same as pos, but when the window is minimized
 	    minPos: {top: 0, left: 0, width: 0, height: 0},
 	    
-	    config: {fx:2,window:{animSpeed:275,constrain:false}},
+	    config: {fx:3,window:{animSpeed:275,constrain:false}},
 	    
 	    //	_minimizeAnim: Boolean
 		//		Set to true when the window is in the middle of a minimize animation.
@@ -233,9 +233,9 @@ define([
 				}));
 			}));
 			
-			if(dojo.isIE){
-				on(this.domNode,'resize',lang.hitch(this,"_onResize"));
-			}
+//			if(dojo.isIE){
+//				on(this.domNode,'resize',lang.hitch(this,"_onResize"));
+//			}
 			domStyle.set(this.domNode, "position", "absolute"); //override /all/ css values for this one
 	        this.pos = {top: 0, left: 0, width: 0, height: 0};
 	        this.minPos = {top: 0, left: 0, width: 0, height: 0};
@@ -476,19 +476,19 @@ define([
 			//	summary:
 			//		Internal method that makes a resizer for the window.
 			domStyle.set(this.sizeHandle.domNode, "display", "block");
-		    query('.win-mc',this.domNode).style("marginBottom",0);
+//		    query('.win-mc',this.domNode).style("marginBottom",0);
 		    
-		    if (this._containerNodMmarginBottom !== undefined) {
- 			   domStyle.set(this.containerNode, "marginBottom", this._containerNodMmarginBottom);
-			}
+//		    if (this._containerNodMmarginBottom !== undefined) {
+// 			   domStyle.set(this.containerNode, "marginBottom", this._containerNodMmarginBottom);
+//			}
 		},
 		
 		killResizer: function()	{
 			//	summary:
 			//Internal method that gets rid of the resizer on the window.
 			domStyle.set(this.sizeHandle.domNode, "display", "none");
-			this._containerNodMmarginBottom = domStyle.get(this.containerNode, "marginBottom");
-			domStyle.set(this.containerNode, "marginBottom", "0");
+			//this._containerNodMmarginBottom = domStyle.get(this.containerNode, "marginBottom");
+			//domStyle.set(this.containerNode, "marginBottom", "0");
 		},
 		
 		minimize: function(){
@@ -609,13 +609,18 @@ define([
 					"border": "1px solid #E7F3E7",
 					"border-radius": "3px 3px / 3px 3px"
 				});
+			   this._containerNodMmarginBottom = domStyle.get(this.containerNode, "marginBottom");
+			   domStyle.set(this.containerNode, "marginBottom", "0");
 				
 			} else {
 				if (this.fulled) {
 					domStyle.set(this.titleBarNode,"display","");
 					query(".win-bl",this.domNode).style("display","");
 					query(".win-bmw",this.domNode).style(this._oldWinStyle);
-_				}
+				    if (this._containerNodMmarginBottom !== undefined) {
+		 			   domStyle.set(this.containerNode, "marginBottom", this._containerNodMmarginBottom);
+					}
+				}	
 			}
 			var win = this.domNode;
 			var max = this.scene.getBox(this,this._winListItem);

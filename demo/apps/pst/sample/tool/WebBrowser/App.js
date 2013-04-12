@@ -45,7 +45,7 @@ define([
             this.win.addChild(client);
             this.win.show();
             if(args.url) this.go(args.url);
-            else this.go("http://www.google.com/");
+            else this.go("http://www.yahoo.co.jp/");
             /*this.interval = setInterval(dojo.hitch(this, function(){
                 var loc = this.Iframe.contentWindow.location;
                 this.Iframe.top = {

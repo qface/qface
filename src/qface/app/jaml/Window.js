@@ -119,7 +119,7 @@ define([
 				
 				//publish /app/transition event
 				//application can subscript this event to do user define operation like select TabBarButton, etc.
-				topic.publish("qface/app/jaml/Window/transition", [next, toId]);
+				topic.publish("/qface/app/jaml/Window/transition", [next, toId]);
 				transit(current.domNode,next.domNode,lang.mixin({},opts,{transition: this.defaultTransition || "none", transitionDefs: transitionDefs})).then(lang.hitch(this, function(){
 					//dojo.style(current.domNode, "display", "none");
 					deferred.when(promise, function(){

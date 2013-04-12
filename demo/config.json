@@ -393,6 +393,9 @@
 				"name":"3Dプレーヤー",
 				"category":"Multimedia",
 				"icon":"icon-32-apps-internet-web-browser",
+				"args":{
+					"paused" :true
+				},
 				"version":"1.0"
 			}
 		}	

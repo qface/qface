@@ -31,7 +31,8 @@ define([
 			var max = this.getBox();
 			query("div.win", this.containerNode).forEach(function(win){
 				var wid = dijit.byNode(win);
-				if(wid.maximized) wid._onResize(); //TODO will be modified
+				//if(wid.maximized) wid._onResize(); //TODO will be modified
+				 wid._onResize();
 				
 			}, this);
 		},

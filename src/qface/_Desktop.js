@@ -222,8 +222,10 @@ define([
 		},
 			
 		changeTheme: function(scene,/*String*/theme)	{
+			var self = this;
 			this.enableTheme(theme).then(function(){
 				scene.set("theme",theme);
+				self.resize();
 			});	
 		},
 		
@@ -252,6 +254,9 @@ define([
 			array.forEach(themes,function(theme) {
 				array.forEach(this.fileList, function(e)	{
 					var linkId = "qface_theme_"+theme+"_"+e;
+					if (document.getElementById(linkId)) {
+						return;
+					}	
 					var deferredCss = new Deferred();
 					defs.push(deferredCss);
 
